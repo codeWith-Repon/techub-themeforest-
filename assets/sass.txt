@@ -1,0 +1,1 @@
+sass --watch 'c:/frontend devlopment/starter-pack/techub clone/assets/scss/main.scss':'c:/frontend devlopment/starter-pack/techub clone/assets/css/main.css'
