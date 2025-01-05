@@ -1,0 +1,320 @@
+@use "../../utils" as *;
+
+.tp-slider {
+  &-area {
+    &:hover {
+      & .tp-slider-arrow-box{
+      
+          .slider-prev{
+            opacity: 1;
+            left: 104px;
+          }
+          .slider-next {
+            right: 104px;
+            opacity: 1;
+          }
+        
+      }
+      
+    }
+  }
+  &-height {
+    height: 840px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media #{$xl} {
+      height: 700px;
+    }
+    @media #{$lg} {
+      height: 615px;
+    }
+    @media #{$md} {
+      height: 530px;
+    }
+    @media #{$xs} {
+      height: 520px;
+    }
+  }
+  &-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: opacity 1500ms ease-in, -webkit-transform 7000ms ease;
+    transition: opacity 1500ms ease-in, -webkit-transform 7000ms ease;
+    transition: transform 9000ms ease, opacity 1500ms ease-in;
+    transition: transform 9000ms ease, opacity 1500ms ease-in,
+      -webkit-transform 9000ms ease;
+  }
+  &-content {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &-sub-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--tp-common-white);
+    display: inline-block;
+    margin-bottom: 12px;
+    font-family: var(--tp-ff-p);
+    text-transform: uppercase;
+
+    @media #{$lg, $md} {
+      font-size: 15px;
+    }
+    @media #{$xs} {
+      font-size: 12px;
+      font-weight: 400;
+      margin-bottom: 10px;
+    }
+  }
+  &-title {
+    font-size: 80px;
+    color: var(--tp-common-white);
+    font-weight: 600;
+    letter-spacing: -3px;
+    line-height: 1.1;
+    margin-bottom: 50px;
+    @media #{$xl} {
+      font-size: 70px;
+    }
+    @media #{$lg} {
+      font-size: 70px;
+    }
+    @media #{$md} {
+      font-size: 55px;
+      margin-bottom: 40px;
+    }
+    @media #{$xs} {
+      font-size: 45px;
+      margin-bottom: 30px;
+    }
+  }
+  &-btn-box {
+    display: inline-flex;
+    justify-content: center;
+    gap: 20px;
+    & .tp-btn {
+      @media #{$xs} {
+        margin-bottom: -13px;
+      }
+    }
+
+    @media #{$xs} {
+      flex-direction: column;
+    }
+  }
+  &-shape1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    @media #{$xl,$lg} {
+      top: -94px;
+    }
+    @media #{$md} {
+      top: -125px;
+    }
+    @media #{$sm,$xs} {
+      display: none;
+    }
+  }
+  &-shape2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    @media #{$xxl} {
+      bottom: -60px;
+    }
+
+    @media #{$xl,$lg} {
+      bottom: -138px;
+    }
+    @media #{$lg} {
+      bottom: -203px;
+    }
+    @media #{$md} {
+      bottom: -234px;
+    }
+    @media #{$sm,$xs} {
+      display: none;
+    }
+  }
+  &-arrow-box {
+    & button {
+      width: 60px;
+      height: 60px;
+      color: var(--tp-theme-primary);
+      background-color: var(--tp-grey-4);
+      border-radius: 50%;
+      font-size: 20px;
+      position: absolute;
+      z-index: 5;
+      top: 50%;
+      opacity: 0;
+      transform: translateY(-50%);
+      transition: all 0.3s ease 0s;
+
+      @media #{$xs} {
+        display: none;
+      }
+
+      &.slider-prev {
+        left: 60px;
+
+        @media #{$xxl} {
+          left: 105px;
+        }
+
+        @media #{$lg} {
+          left: 50px;
+        }
+
+        @media #{$md} {
+          left: 55px;
+        }
+        @media #{$xs} {
+          left: 55px;
+        }
+
+        &:hover {
+          transition: all 0.3s ease 0s;
+          background-color: var(--tp-common-white);
+        }
+      }
+      &.slider-next {
+        right: 50px;
+
+        @media #{$xxl} {
+          right: 105px;
+        }
+
+        @media #{$lg} {
+          right: 80px;
+        }
+
+        @media #{$md} {
+          right: 55px;
+        }
+        @media #{$xs} {
+          right: 55px;
+        }
+
+        &:hover {
+          transition: all 0.3s ease 0s;
+          background-color: var(--tp-common-white);
+        }
+      }
+    }
+  }
+}
+
+// slider dot
+
+.tp-slider {
+  &-dots {
+    position: absolute;
+    bottom: 53px;
+    right: 364px;
+
+    @media #{$xxl} {
+      right: 200px;
+    }
+    @media #{$lg} {
+      right: 150px;
+    }
+    @media #{$xs, $md} {
+      right: 0;
+      left: 0;
+      margin: auto;
+      text-align: center;
+    }
+
+    & .swiper-pagination-bullet {
+      width: 14px;
+      height: 14px;
+      display: inline-block;
+      border-radius: 50%;
+      opacity: 1;
+      margin: 0px 6px;
+      transition: 0.3s;
+      border: 2px solid transparent;
+    }
+    & .swiper-pagination-bullet-active {
+      background-color: var(--tp-common-white);
+    }
+    &.dots-color {
+      & .swiper-pagination-bullet {
+        background-color: var(--tp-common-white);
+        &-active {
+          background-color: transparent;
+          border-color: var(--tp-common-white);
+          transform: scale(1.4);
+        }
+      }
+    }
+  }
+}
+
+//slider bg zoom & text animation css
+
+.tp-slider {
+  &-title-box {
+    opacity: 0;
+    z-index: 3;
+    position: relative;
+    transform: translateY(-150px);
+  }
+  &-btn-box {
+    transform: translateY(150px);
+    opacity: 0;
+  }
+  &-shape2 {
+    opacity: 0;
+    transform: translateY(350px);
+  }
+  &-shape1 {
+    opacity: 0;
+    transform: translateY(-150px);
+  }
+  &-wrapper {
+    & .swiper-slide.swiper-slide-active {
+      .tp-slider-bg {
+        -webkit-transform: scale(1.35);
+        transform: scale(1.35);
+      }
+      & .tp-slider-title-box {
+        opacity: 1;
+        transform: translatey(0px);
+        transition: all 2500ms ease;
+      }
+      & .tp-slider-btn-box {
+        opacity: 1;
+        transform: translatey(0px);
+        transition: all 2500ms ease;
+      }
+      & .tp-slider-shape2 {
+        opacity: 1;
+        transform: translateY(0);
+        transition: all 2000ms ease;
+      }
+      & .tp-slider-shape1 {
+        opacity: 1;
+        transform: translateY(0);
+        transition: all 2000ms ease;
+      }
+    }
+  }
+}
