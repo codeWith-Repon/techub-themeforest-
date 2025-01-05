@@ -1,0 +1,7 @@
+@use "../../utils" as *;
+
+.tp-header-2{
+    & .tp-submenu.submenu.has-homemenu.tp-submenu-2{
+        width: 100%;
+    }
+}

@@ -5,8 +5,6 @@
 /*----------------------------------------*/
 
 .main-menu {
-  margin-left: 40px;
-
   & > nav {
     & > ul {
       & > li {
@@ -107,6 +105,41 @@
             }
           }
         }
+      }
+    }
+  }
+}
+// index-2
+
+.main-menue-right {
+  margin-left: 130px;
+
+  & button {
+    font-size: 25px;
+    color: var(--tp-heading-primary);
+    padding: 42px 0 32px;
+    transition: 0.4s;
+  }
+
+  & .tp-header {
+    &-find {
+      width: 60px;
+    }
+    &-search-icon {
+      & button {
+        &:hover {
+          color: var(--tp-theme-primary);
+        }
+      }
+    }
+    &-hamburger {
+      cursor: pointer;
+      & span {
+        width: 30px;
+        height: 2px;
+        display: block;
+        background: black;
+        margin: 10px 0;
       }
     }
   }
