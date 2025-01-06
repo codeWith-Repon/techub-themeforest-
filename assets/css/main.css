@@ -5724,11 +5724,29 @@ body .ui-tooltip {
   padding: 42px 0 32px;
   transition: 0.4s;
 }
+.main-menue-right button:hover {
+  color: var(--tp-theme-primary);
+}
 .main-menue-right .tp-header-find {
   width: 60px;
 }
 .main-menue-right .tp-header-search-icon button:hover {
   color: var(--tp-theme-primary);
+}
+.main-menue-right .tp-header-shop-icon::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 32px;
+  right: 0;
+  left: auto;
+}
+.main-menue-right .tp-header-shop-icon:hover::before {
+  background: var(--tp-theme-primary);
+  width: 30px;
+  right: auto;
+  left: 0;
 }
 .main-menue-right .tp-header-hamburger {
   cursor: pointer;
@@ -6462,7 +6480,7 @@ body .ui-tooltip {
   height: 100%;
   background: var(--tp-theme-primary);
   z-index: 1;
-  opacity: 0.3;
+  opacity: 0.6;
   top: 0;
   left: 0;
   bottom: 0;

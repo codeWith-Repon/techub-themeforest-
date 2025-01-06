@@ -119,6 +119,10 @@
     color: var(--tp-heading-primary);
     padding: 42px 0 32px;
     transition: 0.4s;
+
+    &:hover{
+      color: var(--tp-theme-primary);
+    }
   }
 
   & .tp-header {
@@ -131,6 +135,27 @@
           color: var(--tp-theme-primary);
         }
       }
+    }
+    &-shop-icon{
+      &::before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: 32px;
+        right: 0;
+        left: auto;
+      }
+
+      &:hover{
+        &::before{
+          background: var(--tp-theme-primary);
+          width: 30px;
+          right: auto;
+          left: 0;
+        }
+      }
+
     }
     &-hamburger {
       cursor: pointer;
