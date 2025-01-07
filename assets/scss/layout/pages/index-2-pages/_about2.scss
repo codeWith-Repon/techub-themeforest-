@@ -163,6 +163,12 @@
         line-height: 65px;
         font-size: 25px;
         color: var(--tp-theme-primary);
+        transition: 0.4s;
+
+        &:hover{
+          color: var(--tp-common-white);
+          background-color: var(--tp-theme-primary);
+        }
       }
     }
     &-number {
