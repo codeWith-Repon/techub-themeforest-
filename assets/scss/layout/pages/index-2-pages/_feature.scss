@@ -69,6 +69,7 @@
     &-wrapper {
       background: var(--tp-common-white);
       padding: 35px 32px 35px;
+      filter: drop-shadow(-2.29px 11.78px 20px rgba(135, 130, 147, 0.08));
       transition: 0.4s;
 
       &:hover {

@@ -1,0 +1,130 @@
+@use "../../../utils" as *;
+
+.tp-service-2 {
+  &-area {
+    margin-top: 30.4rem;
+    background-image: linear-gradient(0deg, #e9ebfd 0%, #fff 100%);
+    padding-top: 248px;
+    padding-bottom: 250px;
+    // z-index: -1;
+  }
+  &-title-wrapper {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &-pragraph {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    width: 80%;
+    margin: 43px 29px 50px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.4s;
+  }
+
+  &-btn {
+    position: absolute;
+    bottom: 12px;
+    left: 40px;
+    width: 291px;
+    padding: 15px;
+    font-weight: 700;
+    color: var(--tp-text-body);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
+    transition: 0.4s;
+
+    & i {
+      display: none;
+      line-height: 0;
+      transition: 0.4s;
+    }
+  }
+  &-item {
+    &-wrapper {
+      padding-bottom: 150px;
+
+      &:hover {
+        & .tp-service-2-btn {
+          background-color: var(--tp-theme-primary);
+          color: var(--tp-common-white);
+        }
+      }
+    }
+    &-inner-content {
+      position: absolute;
+      left: 40px;
+      top: 210px;
+      width: 291px;
+      min-height: 188px;
+      background: var(--tp-common-white);
+    }
+    &-heading {
+      font-size: 22px;
+    }
+    &-icon {
+      margin-top: 40px;
+      text-align: center;
+
+      & span {
+        font-size: 56px;
+        color: var(--tp-theme-primary);
+        display: inline-block;
+        padding-bottom: 20px;
+      }
+    }
+  }
+}
+
+.swiper-slide.swiper-slide-active .tp-service-2{
+  &-item-icon {
+    visibility: hidden;
+    opacity: 0;
+  }
+  &-pragraph{
+    visibility: visible;
+    opacity: 1;
+    & p{
+      color: var(--tp-common-white);
+    }
+  }
+  &-item-inner-content {
+    background-color: var(--tp-heading-primary);
+  }
+  &-btn{
+    color: var(--tp-common-white);
+    background-color: var(--tp-theme-primary);
+
+    & i{
+      opacity: 1;
+      visibility: visible;
+      display: block;
+    }
+  }
+}
+
+.tp-service-2-bg-shape1 {
+  position: absolute;
+  top: 190px;
+  left: 119px;
+}
+.tp-service-2-bg-shape3 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  // z-index: -1;
+}
+
+// .tp-service-2-bg-shape2 {
+//   position: absolute;
+//   bottom: 0;
+//   left: 0;
+//   z-index: 1;
+// }
