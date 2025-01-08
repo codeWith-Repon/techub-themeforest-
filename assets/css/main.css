@@ -18048,7 +18048,6 @@ label {
   margin-top: 30.4rem;
   background-image: linear-gradient(0deg, #e9ebfd 0%, #fff 100%);
   padding-top: 248px;
-  padding-bottom: 250px;
 }
 .tp-service-2-title-wrapper {
   max-width: 600px;
@@ -18144,12 +18143,21 @@ label {
   position: absolute;
   top: 190px;
   left: 119px;
+  animation: rotate-thum 9s infinite;
 }
 
 .tp-service-2-bg-shape3 {
   position: absolute;
   top: 0;
   right: 0;
+}
+
+.tp-service-2-bg-shape2 {
+  position: absolute;
+  bottom: -58px;
+  left: 0;
+  z-index: 1;
+  animation: bounce-thum-3 4s forwards infinite alternate;
 }
 
 /*# sourceMappingURL=main.css.map */
