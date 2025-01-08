@@ -18160,4 +18160,35 @@ label {
   animation: bounce-thum-3 4s forwards infinite alternate;
 }
 
+.choose-us-2-title-btn .tp-btn.tp-btn-border {
+  border: 1px solid var(--tp-common-black);
+  color: var(--tp-common-black);
+}
+.choose-us-2-title-btn .tp-btn.tp-btn-border:hover {
+  color: white;
+}
+
+.tp-section-title-wrapper {
+  max-width: 683px;
+}
+
+.tp-choose-us-2-thumb-img1 {
+  position: absolute;
+  top: 8px;
+  right: 15px;
+  animation: bounce-thum-2 1s ease-in-out 0.1s forwards infinite alternate;
+}
+.tp-choose-us-2-bg-s1 {
+  position: absolute;
+  top: 23px;
+  left: 102px;
+  animation: zoom-in-zoom-out 3.5s ease infinite;
+}
+.tp-choose-us-2-bg-s2 {
+  position: absolute;
+  top: 160px;
+  left: 31px;
+  animation: rotate-thum 3.5s infinite;
+}
+
 /*# sourceMappingURL=main.css.map */
