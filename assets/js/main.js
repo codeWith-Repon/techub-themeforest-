@@ -2,6 +2,7 @@
 ==================== JS INDEX ======================
 ****************************************************
 
+**cursor js
 01. PreLoader Js
 02. Common Js
 03. Menu Controls JS
@@ -30,7 +31,48 @@
 
 (function ($) {
 	"use strict";
+ /////**cursor js
+ function mousemoveHandler(e) {
+    try {
+      const target = e.target;
 
+      let tl = gsap.timeline({
+        defaults: {
+          x: e.clientX,
+          y: e.clientY,
+        },
+      });
+
+      // Main Cursor Moving
+      tl.to(".cursor1", {
+        ease: "power2.out",
+      }).to(
+        ".cursor2",
+        {
+          ease: "power2.out",
+        },
+        "-=0.4"
+      );
+    } catch (error) {
+      console.log(error);
+    }
+  }
+  document.addEventListener("mousemove", mousemoveHandler);
+
+  // Cursor JS
+
+  $("#cursor_style").on("change", function () {
+    var cursor_val = $(this).val();
+
+    if (cursor_val == "1") {
+      $(".cursor1").hide();
+      $(".cursor2").hide();
+    } else {
+      $(".cursor1").show();
+      $(".cursor2").show();
+    }
+  });
+  ///cursosrjs end
 
 	var windowOn = $(window);
 	////////////////////////////////////////////////////
