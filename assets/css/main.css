@@ -11113,68 +11113,6 @@ label {
     font-size: 18px;
   }
 }
-.tp-counter-2-area {
-  background: var(--tp-common-gray2);
-}
-.tp-counter-2-icon {
-  margin-bottom: 20px;
-}
-.tp-counter-2-icon span {
-  width: 128px;
-  height: 128px;
-  line-height: 140px;
-  display: inline-block;
-  background: transparent;
-  border-radius: 50%;
-  color: var(--tp-theme-primary);
-  font-size: 56px;
-  border: 1px solid var(--tp-border-4);
-  transition: 0.4s;
-  position: relative;
-  cursor: pointer;
-}
-.tp-counter-2-icon span:hover {
-  background: var(--tp-theme-primary);
-  color: var(--tp-common-white);
-  border-color: var(--tp-theme-primary);
-}
-.tp-counter-2-count {
-  font-size: 50px;
-  letter-spacing: -2px;
-  margin-bottom: 6px;
-}
-.tp-counter-2-bg-shape {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
-@media (max-width: 767px) {
-  .tp-counter-2-bg-shape {
-    display: none;
-  }
-}
-.tp-counter-3-area {
-  background: var(--tp-common-white);
-}
-.tp-counter-4-area {
-  background: var(--tp-heading-1);
-}
-.tp-counter-4-count {
-  color: var(--tp-common-white);
-}
-.tp-counter-4-icon span {
-  color: var(--tp-common-white);
-  border: 1px solid var(--tp-text-13);
-}
-.tp-counter-4-icon span:hover {
-  background: var(--tp-common-white);
-  color: var(--tp-text-13);
-  border-color: var(--tp-common-white);
-}
-.tp-counter-4-text-paragraph {
-  color: var(--tp-common-white);
-}
 
 .tp-counter-inr-count {
   font-size: 60px;
@@ -17196,6 +17134,36 @@ label {
 
 .tp-section-subtitle.style-2 {
   margin-bottom: 5px;
+}
+
+.tp-counter-2-area {
+  background: var(--tp-common-gray2);
+}
+.tp-counter-2-icon {
+  margin-bottom: 20px;
+}
+.tp-counter-2-icon span {
+  width: 128px;
+  height: 128px;
+  display: inline-block;
+  background: var(--tp-common-white);
+  color: var(--tp-theme-primary);
+  border-radius: 50%;
+  text-align: center;
+  font-size: 56px;
+  line-height: 146px;
+  border: 1px solid var(--tp-border-4);
+  cursor: pointer;
+  transition: 0.4s;
+}
+.tp-counter-2-icon span:hover {
+  color: var(--tp-common-white);
+  background-color: var(--tp-theme-primary);
+}
+.tp-counter-2-number {
+  font-size: 50px;
+  letter-spacing: -2px;
+  margin-bottom: 6px;
 }
 
 /*# sourceMappingURL=main.css.map */
