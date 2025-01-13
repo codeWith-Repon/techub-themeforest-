@@ -34,6 +34,9 @@
           color: var(--tp-common-gray);
           padding: 38px 0 38px;
           font-family: var(--tp-ff-heading);
+          &.tp-home-3{
+            color: var(--tp-common-white);
+        }
         }
         &:hover {
           & .submenu {

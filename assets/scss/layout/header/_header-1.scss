@@ -195,3 +195,7 @@
     animation: 0.95s ease 0s normal forwards 1 running fadeInDown;
     transition: 0.3s ease;
 }
+
+.header-sticky.header-3{
+    background-color: var(--tp-theme-primary);
+}
