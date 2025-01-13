@@ -16687,4 +16687,80 @@ label {
   transition: 0.4s;
 }
 
+.tp-about-3-thumb {
+  margin-left: -93px;
+}
+.tp-about-3-shape1 {
+  position: absolute;
+  top: -50px;
+  left: -345px;
+  z-index: -1;
+}
+.tp-about-3-shape2 {
+  position: absolute;
+  top: 117px;
+  left: -102px;
+  z-index: -2;
+  animation: bounce-thum-2 1s ease-in-out 0.1s forwards infinite alternate;
+}
+.tp-about-3-shape3 {
+  position: absolute;
+  top: 197px;
+  right: 46px;
+  z-index: -1;
+  animation: moving 8s linear infinite;
+}
+.tp-about-3-item {
+  display: flex;
+  align-items: center;
+}
+.tp-about-3-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.tp-about-3-item:first-of-type {
+  margin-top: 40px;
+}
+.tp-about-3-item:hover .tp-about-3-counter::before {
+  height: 46px;
+}
+.tp-about-3-counter {
+  width: 155px;
+  position: relative;
+}
+.tp-about-3-counter::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  right: 0;
+  background: var(--tp-common-black);
+  width: 2px;
+  height: 0;
+  z-index: 1;
+  transition: 0.4s;
+}
+.tp-about-3-counter::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: 0;
+  width: 2px;
+  height: 46px;
+  background: var(--tp-grey-8);
+}
+.tp-about-3-counter-right-text {
+  width: 362px;
+  padding-left: 46px;
+}
+.tp-about-3-counter-number {
+  font-size: 26px;
+  letter-spacing: -1px;
+  color: var(--tp-theme-primary);
+  margin-bottom: 4px;
+}
+.tp-about-3-number-txt {
+  font-size: 16px;
+  color: var(--tp-heading-primary);
+  font-weight: 700;
+}
+
 /*# sourceMappingURL=main.css.map */
