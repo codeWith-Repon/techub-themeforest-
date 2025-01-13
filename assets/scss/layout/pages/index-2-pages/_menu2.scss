@@ -1,0 +1,11 @@
+@use "../../../utils" as *;
+
+
+.main-menue-right.style-2 {
+    @media #{$xxl}  {
+        margin-left: 225px;
+    }
+    @media #{$xl}  {
+        margin-left: 187px;
+    }
+  }
