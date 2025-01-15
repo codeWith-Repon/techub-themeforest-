@@ -123,6 +123,14 @@
         @media #{$xs} {
             padding: 20px 10px;
         }
+        &.style-2{
+
+        }
+    }
+    &-2{
+        @media #{$xs} {
+            justify-content: space-between;
+        }
     }
     &-search {
         width: 53px;
