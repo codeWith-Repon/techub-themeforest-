@@ -3,19 +3,25 @@
 .tp-slider {
   &-area {
     &:hover {
-      & .tp-slider-arrow-box{
-      
-          .slider-prev{
-            opacity: 1;
-            left: 104px;
+      & .tp-slider-arrow-box {
+        .slider-prev {
+          opacity: 1;
+          left: 104px;
+
+          @media #{$xxl, $xl, $lg, $md, $sm, $xs} {
+            left: 40px;
           }
-          .slider-next {
-            right: 104px;
-            opacity: 1;
+
+        }
+        .slider-next {
+          right: 104px;
+          opacity: 1;
+
+          @media #{$xxl, $xl, $lg, $md, $sm, $xs} {
+            right: 40px;
           }
-        
+        }
       }
-      
     }
   }
   &-height {
@@ -175,20 +181,20 @@
         left: 60px;
 
         @media #{$xxl} {
-          left: 105px;
+          // left: 105px;
+          left: 73px;
+        }
+       
+        @media #{$xl, $lg, $md, $xs, $sm} {
+          // left: 105px;
+          left: 0px;
+        }
+        @media #{$lg, $md, $xs, $sm} {
+          // left: 105px;
+          display: none;
         }
 
-        @media #{$lg} {
-          left: 50px;
-        }
-
-        @media #{$md} {
-          left: 55px;
-        }
-        @media #{$xs} {
-          left: 55px;
-        }
-
+        
         &:hover {
           transition: all 0.3s ease 0s;
           background-color: var(--tp-common-white);
@@ -198,20 +204,19 @@
         right: 50px;
 
         @media #{$xxl} {
-          right: 105px;
+          // right: 105px;
+          right: 73px;
+        }
+        @media #{$xl,$lg, $md, $xs, $sm} {
+          // left: 105px;
+          right: 0px;
+        }
+        @media #{$lg, $md, $xs, $sm} {
+          // left: 105px;
+          display: none;
         }
 
-        @media #{$lg} {
-          right: 80px;
-        }
-
-        @media #{$md} {
-          right: 55px;
-        }
-        @media #{$xs} {
-          right: 55px;
-        }
-
+       
         &:hover {
           transition: all 0.3s ease 0s;
           background-color: var(--tp-common-white);
@@ -228,6 +233,7 @@
     position: absolute;
     bottom: 53px;
     right: 364px;
+    z-index: 1;
 
     @media #{$xxl} {
       right: 200px;

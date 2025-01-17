@@ -6177,9 +6177,19 @@ body .ui-tooltip {
   opacity: 1;
   left: 104px;
 }
+@media only screen and (min-width: 1400px) and (max-width: 1599px), only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
+  .tp-slider-area:hover .tp-slider-arrow-box .slider-prev {
+    left: 40px;
+  }
+}
 .tp-slider-area:hover .tp-slider-arrow-box .slider-next {
   right: 104px;
   opacity: 1;
+}
+@media only screen and (min-width: 1400px) and (max-width: 1599px), only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
+  .tp-slider-area:hover .tp-slider-arrow-box .slider-next {
+    right: 40px;
+  }
 }
 .tp-slider-height {
   height: 840px;
@@ -6372,22 +6382,17 @@ body .ui-tooltip {
 }
 @media only screen and (min-width: 1400px) and (max-width: 1599px) {
   .tp-slider-arrow-box button.slider-prev {
-    left: 105px;
+    left: 73px;
   }
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px), only screen and (min-width: 576px) and (max-width: 767px) {
   .tp-slider-arrow-box button.slider-prev {
-    left: 50px;
+    left: 0px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px), only screen and (min-width: 576px) and (max-width: 767px) {
   .tp-slider-arrow-box button.slider-prev {
-    left: 55px;
-  }
-}
-@media (max-width: 767px) {
-  .tp-slider-arrow-box button.slider-prev {
-    left: 55px;
+    display: none;
   }
 }
 .tp-slider-arrow-box button.slider-prev:hover {
@@ -6399,22 +6404,17 @@ body .ui-tooltip {
 }
 @media only screen and (min-width: 1400px) and (max-width: 1599px) {
   .tp-slider-arrow-box button.slider-next {
-    right: 105px;
+    right: 73px;
   }
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px), only screen and (min-width: 576px) and (max-width: 767px) {
   .tp-slider-arrow-box button.slider-next {
-    right: 80px;
+    right: 0px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px), only screen and (min-width: 576px) and (max-width: 767px) {
   .tp-slider-arrow-box button.slider-next {
-    right: 55px;
-  }
-}
-@media (max-width: 767px) {
-  .tp-slider-arrow-box button.slider-next {
-    right: 55px;
+    display: none;
   }
 }
 .tp-slider-arrow-box button.slider-next:hover {
@@ -6426,6 +6426,7 @@ body .ui-tooltip {
   position: absolute;
   bottom: 53px;
   right: 364px;
+  z-index: 1;
 }
 @media only screen and (min-width: 1400px) and (max-width: 1599px) {
   .tp-slider-dots {
@@ -6513,6 +6514,21 @@ body .ui-tooltip {
 .tp-slider-2-height {
   height: 800px;
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
+  .tp-slider-2-height {
+    height: 700px;
+  }
+}
+@media (max-width: 767px) {
+  .tp-slider-2-height {
+    height: 590px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .tp-slider-2-height {
+    height: 655px;
+  }
+}
 .tp-slider-2-height::before {
   content: "";
   position: absolute;
@@ -6556,11 +6572,49 @@ body .ui-tooltip {
   color: transparent;
   opacity: 0.3;
 }
+@media only screen and (min-width: 1400px) and (max-width: 1599px), only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px) {
+  .tp-slider-2-stroke {
+    font-size: 150px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
+  .tp-slider-2-stroke {
+    font-size: 130px;
+  }
+}
+@media (max-width: 767px) {
+  .tp-slider-2-stroke {
+    font-size: 72px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .tp-slider-2-stroke {
+    font-size: 110px;
+  }
+}
 .tp-slider-2-stroke-text {
   position: absolute;
   top: -118px;
   left: -108px;
   z-index: -1;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
+  .tp-slider-2-stroke-text {
+    top: -98px;
+    left: -66px;
+  }
+}
+@media (max-width: 767px) {
+  .tp-slider-2-stroke-text {
+    top: -51px;
+    left: -12px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .tp-slider-2-stroke-text {
+    top: -98px;
+    left: -66px;
+  }
 }
 .tp-slider-2-title {
   font-size: 110px;
@@ -6569,10 +6623,61 @@ body .ui-tooltip {
   letter-spacing: -3px;
   line-height: 1;
 }
+@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px) {
+  .tp-slider-2-title {
+    font-size: 100px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .tp-slider-2-title {
+    font-size: 90px;
+  }
+}
+@media (max-width: 767px) {
+  .tp-slider-2-title {
+    font-size: 53px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .tp-slider-2-title {
+    font-size: 75px;
+  }
+}
 .tp-slider-2-btn-box {
   display: flex;
   gap: 21px;
   margin-left: 6px;
+}
+@media (max-width: 767px) {
+  .tp-slider-2-btn-box {
+    flex-direction: column;
+    width: 53%;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .tp-slider-2-content {
+    margin-left: 70px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .tp-slider-2-content {
+    margin-left: 110px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .tp-slider-2-content {
+    margin-left: 70px;
+  }
+}
+@media (max-width: 767px) {
+  .tp-slider-2-content {
+    margin-left: 15px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .tp-slider-2-content {
+    margin-left: 23px;
+  }
 }
 
 .tp-slider-2-title-box {
