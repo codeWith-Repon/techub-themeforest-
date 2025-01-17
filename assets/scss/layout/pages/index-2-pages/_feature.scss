@@ -9,8 +9,24 @@
 }
 .tp-section-title.style-2.tp-feature-2-section-title {
   color: var(--tp-common-white);
-}
 
+  @media #{$sm} {
+    font-size: 31px;
+  }
+}
+.tp-feature-slider-active {
+  margin-top: -40px;
+
+  @media #{$xl,$lg} {
+    margin-top: 0px;
+  }
+  @media #{$xs} {
+    margin-top: -94px;
+  }
+  @media #{$sm} {
+    margin-top: 20px;
+  }
+}
 .tp-feature-2 {
   &-bg {
     position: absolute;
@@ -20,15 +36,33 @@
     min-height: 487px;
     bottom: 0;
   }
+  &-wrapper {
+    @media #{$xs} {
+      margin-bottom: 20px;
+    }
+  }
   &-arrow {
     &-box {
       margin-top: 34px;
+
+      @media #{$xs} {
+        margin-top: 17px;
+        margin-bottom: 125px;
+      }
     }
     &-icon {
       display: flex;
       flex-direction: column;
       align-items: end;
       gap: 16px;
+
+      @media #{$xs} {
+        display: block;
+        margin-top: -12px;
+      }
+      @media #{$sm} {
+        margin-top: 0px;
+      }
       & button {
         width: 60px;
         height: 60px;
@@ -39,6 +73,11 @@
         font-size: 23px;
         transition: 0.4s;
 
+        @media #{$xs} {
+          &:not(:last-child) {
+            margin-right: 10px;
+          }
+        }
         &:hover {
           background-color: var(--tp-common-white);
           color: var(--tp-heading-primary);
@@ -71,6 +110,15 @@
       padding: 35px 32px 35px;
       filter: drop-shadow(-2.29px 11.78px 20px rgba(135, 130, 147, 0.08));
       transition: 0.4s;
+
+      @media #{$xs} {
+        width: 91%;
+        margin: auto;
+      }
+      @media #{$sm} {
+        width: 100%;
+        margin: auto;
+      }
 
       &:hover {
         background-color: var(--tp-theme-primary);

@@ -131,6 +131,12 @@
       padding: 33px 81px 20px 41px;
       animation: moving 9s linear infinite;
 
+      @media #{$xl} {
+        left: -24px;
+      }
+      @media #{$lg} {
+        left: -24px;
+      }
       @media #{$md} {
         left: -30px;
       }
@@ -225,18 +231,19 @@
       line-height: 26px;
     }
   }
+  &-contact-info{
+    @media #{$xs} {
+      margin-top: 40px;
+    }
+  }
   &-call {
     &-icon {
       padding-left: 21px;
 
       @media #{$xs} {
         padding-left: 0;
-        margin-top: 40px;
       }
-      @media #{$sm} {
-        // padding-left: 0px;
-        // margin-top: 30px;
-      }
+      
       & a {
         width: 60px;
         height: 60px;
