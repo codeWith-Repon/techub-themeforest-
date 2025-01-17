@@ -5,6 +5,10 @@
     margin-top: 30.4rem;
     background-image: linear-gradient(0deg, #e9ebfd 0%, #fff 100%);
     padding-top: 248px;
+
+    @media #{$xs} {
+      margin-top: 27.4rem;
+    }
   }
   &-title-wrapper {
     max-width: 600px;
@@ -23,6 +27,21 @@
     visibility: hidden;
     opacity: 0;
     transition: 0.4s;
+
+    @media #{$lg, $md, $sm, $xs} {
+      width: unset;
+      margin-top: 75px;
+      margin-left: 42px;
+      margin-right: 42px;
+      margin-bottom: 0px;
+    }
+    @media #{$md} {
+      margin-top: 49px;
+    }
+    @media #{$sm, $xs} {
+      margin-left: 50px;
+    margin-right: 50px;
+    }
   }
 
   &-btn {
@@ -38,6 +57,19 @@
     justify-content: center;
     gap: 11px;
     transition: 0.4s;
+
+    @media #{$xl, $lg} {
+      left: 30px;
+    }
+    @media #{$lg, $md, $sm, $xs} {
+      width: 87%;
+    }
+    @media #{$md, $sm, $xs} {
+     left: 21px;
+    }
+    @media #{$sm, $xs} {
+      left: 34px;
+    }
 
     & i {
       display: none;
@@ -59,10 +91,30 @@
     &-inner-content {
       position: absolute;
       left: 40px;
-      top: 210px;
+      top: 212px;
       width: 291px;
       min-height: 188px;
       background: var(--tp-common-white);
+
+      @media #{$xl} {
+        left: 30px;
+      }
+      @media #{$lg} {
+        left: 30px;
+        top: 282px;
+        width: 87%;
+      }
+      @media #{$md,} {
+        left: 21px;
+    top: 178px;
+        width: 87%;
+      }
+      @media #{$sm, $xs} {
+        width: 87%;
+        left: 34px;
+        bottom: 72px;
+        top: unset;
+      }
     }
     &-heading {
       font-size: 22px;
@@ -79,28 +131,33 @@
       }
     }
   }
+  &-thumb {
+    & img {
+      width: 100%;
+    }
+  }
 }
 
-.swiper-slide.swiper-slide-active .tp-service-2{
+.swiper-slide.swiper-slide-active .tp-service-2 {
   &-item-icon {
     visibility: hidden;
     opacity: 0;
   }
-  &-pragraph{
+  &-pragraph {
     visibility: visible;
     opacity: 1;
-    & p{
+    & p {
       color: var(--tp-common-white);
     }
   }
   &-item-inner-content {
     background-color: var(--tp-heading-primary);
   }
-  &-btn{
+  &-btn {
     color: var(--tp-common-white);
     background-color: var(--tp-theme-primary);
 
-    & i{
+    & i {
       opacity: 1;
       visibility: visible;
       display: block;
@@ -113,6 +170,22 @@
   top: 190px;
   left: 119px;
   animation: rotate-thum 9s infinite;
+
+  @media #{$lg} {
+    left: 16px;
+  }
+  @media #{$md} {
+    width: 15%;
+    left: 16px;
+    top: 218px;
+  }
+  @media #{$sm} {
+    width: 13%;
+    left: 22px;
+  }
+  @media #{$xs} {
+    display: none;
+  }
 }
 .tp-service-2-bg-shape3 {
   position: absolute;
