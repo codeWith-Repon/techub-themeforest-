@@ -15236,6 +15236,16 @@ label {
 .tp-about-2-wrapper {
   margin-top: -13px;
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .tp-about-2-wrapper {
+    margin-left: -32px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
+  .tp-about-2-wrapper {
+    margin-top: 40px;
+  }
+}
 .tp-about-2-wrapper .tp-section-paragraph {
   margin-top: 18px;
 }
@@ -15249,6 +15259,21 @@ label {
   width: 640px;
   height: 150%;
   z-index: -1;
+}
+@media only screen and (min-width: 1600px) and (max-width: 1700px), only screen and (min-width: 1400px) and (max-width: 1599px) {
+  .tp-about-2-area::before {
+    width: 490px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px) {
+  .tp-about-2-area::before {
+    width: 395px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px), only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .tp-about-2-area::before {
+    width: 100%;
+  }
 }
 .tp-about-2-shape-1 {
   position: absolute;
@@ -15266,6 +15291,27 @@ label {
   position: relative;
   top: -12px;
 }
+@media (max-width: 767px) {
+  .tp-about-2-thumb-left-img {
+    left: 0;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .tp-about-2-thumb-left-img img {
+    width: 85%;
+    margin-top: 42px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .tp-about-2-thumb-left-img img {
+    width: 100%;
+  }
+}
+@media (max-width: 767px), only screen and (min-width: 576px) and (max-width: 767px) {
+  .tp-about-2-thumb-left-img img {
+    width: 100%;
+  }
+}
 .tp-about-2-thumb-left-img::before {
   content: "";
   position: absolute;
@@ -15275,12 +15321,48 @@ label {
   left: -19px;
   background: var(--tp-theme-primary);
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .tp-about-2-thumb-left-img::before {
+    height: 911px;
+  }
+}
+@media (max-width: 767px) {
+  .tp-about-2-thumb-left-img::before {
+    height: 472px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .tp-about-2-thumb-left-img::before {
+    height: 654px;
+  }
+}
 .tp-about-2-thumb-txt-box {
   position: absolute;
   top: 20px;
   right: 128px;
   background: var(--tp-common-white);
   padding: 34px 10px 22px 28px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .tp-about-2-thumb-txt-box {
+    top: 41px;
+    right: 68px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .tp-about-2-thumb-txt-box {
+    right: 0;
+  }
+}
+@media (max-width: 767px) {
+  .tp-about-2-thumb-txt-box {
+    right: 0px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .tp-about-2-thumb-txt-box {
+    right: 0px;
+  }
 }
 .tp-about-2-thumb-number {
   font-size: 50px;
@@ -15298,6 +15380,21 @@ label {
   background: var(--tp-common-white);
   padding: 33px 81px 20px 41px;
   animation: moving 9s linear infinite;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .tp-about-2-thumb-amount-content {
+    left: -30px;
+  }
+}
+@media (max-width: 767px) {
+  .tp-about-2-thumb-amount-content {
+    left: -20px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .tp-about-2-thumb-amount-content {
+    left: -30px;
+  }
 }
 .tp-about-2-thumb-amount-title {
   font-size: 21px;
@@ -15319,6 +15416,11 @@ label {
 }
 .tp-about-2-bottom {
   padding-top: 20px;
+}
+@media (max-width: 767px) {
+  .tp-about-2-bottom {
+    display: block !important;
+  }
 }
 .tp-about-2-feature-text {
   margin-bottom: 0;
@@ -15364,6 +15466,12 @@ label {
 .tp-about-2-call-icon {
   padding-left: 21px;
 }
+@media (max-width: 767px) {
+  .tp-about-2-call-icon {
+    padding-left: 0;
+    margin-top: 40px;
+  }
+}
 .tp-about-2-call-icon a {
   width: 60px;
   height: 60px;
@@ -15392,6 +15500,11 @@ label {
   color: var(--tp-theme-primary);
 }
 
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .tp-section-title {
+    font-size: 45px;
+  }
+}
 .tp-section-subtitle.style-2 {
   position: relative;
 }
