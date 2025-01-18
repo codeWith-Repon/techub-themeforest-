@@ -32,6 +32,11 @@
 }
 
 .tp-choose-us-2 {
+  &-area{
+    @media #{$xl, $lg, $md, $sm} {
+      padding-bottom: 70px;
+    }
+  }
   &-thumb-img1 {
     position: absolute;
     top: 8px;

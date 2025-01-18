@@ -1,8 +1,43 @@
 @use "../../../utils" as *;
 
+.tp-section-title-wrapper.project-2{
+  @media #{$xl, $lg,$md, $sm, $xs} {
+    max-width: 683px;
+  }
+  @media #{$lg,$md, $sm, $xs} {
+    margin-bottom: 0;
+  }
+  @media #{$md, $sm, $xs} {
+    max-width: 500px;
+  }
+}
+
+.tp-section-title.project-2{
+  @media #{$xs} {
+    font-size: 27px;
+  }
+  @media #{$sm} {
+    font-size: 37px;
+  }
+}
+
 .tp-project-2 {
+  &-projects{
+    @media #{$md, $sm, $xs} {
+      padding-bottom: 65px;
+    }
+  }
   &-area {
     padding: 0 150px;
+
+    @media #{$xl, $lg,$md, $sm, $xs} {
+      padding: 0 28px;
+    }
+  }
+  &-item-wrapper{
+    @media #{$md, $sm, $xs} {
+      padding-bottom: 31px;
+    }
   }
   &-link {
     &-btn {
@@ -67,6 +102,10 @@
   }
   &-title-box {
     padding: 25px 0 0 30px;
+
+    @media #{$xl,$lg,$md, $sm, $xs} {
+      padding: 24px 0 0 21px;
+    }
   }
   &-item {
     border: 1px solid var(--tp-common-gray2);
@@ -77,6 +116,16 @@
 
       &:hover {
         color: var(--tp-theme-primary);
+      }
+
+      @media #{$xl,$lg, $sm} {
+        font-size: 18px;
+      }
+      @media #{$md} {
+        font-size: 25px;
+      }
+      @media #{$xs} {
+        font-size: 24px;
       }
     }
     &-button {
