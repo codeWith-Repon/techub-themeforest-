@@ -16989,8 +16989,25 @@ label {
   right: 0;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px) {
+  .tp-contact-2.tp-section-title {
+    font-size: 35px;
+  }
+}
 .tp-contact-2-bg {
   background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: -1;
+  width: 69%;
+  background-repeat: no-repeat;
+}
+@media (max-width: 767px) {
+  .tp-contact-2-bg {
+    width: 100%;
+  }
 }
 .tp-contact-2-title {
   width: 634px;
@@ -17012,6 +17029,24 @@ label {
   background: var(--tp-common-white);
   padding: 45px 50px 28px;
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px) {
+  .tp-contact-2-counter {
+    padding: 45px 35px 28px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px) {
+  .tp-contact-2-counter {
+    padding: 45px 12px 28px;
+    min-width: 201px;
+    padding-top: 29px;
+  }
+}
+@media (max-width: 767px) {
+  .tp-contact-2-counter {
+    background: var(--tp-common-white);
+    padding: 35px 42px 26px;
+  }
+}
 .tp-contact-2-counter-wrapper {
   gap: 20px;
   justify-content: end;
@@ -17020,22 +17055,61 @@ label {
   box-shadow: 0px 0px 60px 0px rgba(0, 8, 21, 0.1);
   -webkit-box-shadow: 0px 0px 60px 0px rgba(0, 8, 21, 0.1);
 }
+@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px) {
+  .tp-contact-2-counter-wrapper {
+    padding-top: 20px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px) {
+  .tp-contact-2-counter-wrapper {
+    flex-direction: column;
+    margin-right: 77px;
+    margin-left: -30px;
+  }
+}
+@media (max-width: 767px) {
+  .tp-contact-2-counter-wrapper {
+    margin-right: 0;
+    margin-left: 0;
+    flex-direction: column;
+  }
+}
 .tp-contact-2-counter-count {
   color: var(--tp-theme-primary);
   font-size: 48px;
   margin-bottom: 4px;
   letter-spacing: -1px;
 }
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px) {
+  .tp-contact-2-counter-count {
+    font-size: 34px;
+  }
+}
+@media (max-width: 767px) {
+  .tp-contact-2-counter-count {
+    font-size: 34px;
+  }
+}
 .tp-contact-2-counter-paragraph {
   font-size: 18px;
   font-weight: 500;
   font-family: var(--tp-ff-heading);
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px) {
+  .tp-contact-2-counter-paragraph {
+    font-size: 14px;
+  }
 }
 .tp-contact-2-box {
   background: var(--tp-common-white);
   padding: 58px 52px;
   box-shadow: 0px 0px 60px 0px rgba(30, 22, 22, 0.06);
   margin-top: 13px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px) {
+  .tp-contact-2-box {
+    padding: 27px 29px;
+  }
 }
 .tp-contact-2-box input {
   margin-bottom: 20px;
@@ -17059,6 +17133,27 @@ label {
   color: var(--tp-theme-primary);
   margin-bottom: 50px;
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .tp-contact-2-title.box {
+    width: 32rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px) {
+  .tp-contact-2-title.box {
+    width: 29rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px) {
+  .tp-contact-2-title.box {
+    margin-left: -25px;
+  }
+}
+@media (max-width: 767px) {
+  .tp-contact-2-title.box {
+    margin-left: 0px;
+    width: 21rem;
+  }
+}
 .tp-contact-2-btn {
   padding: 25px 0;
 }
@@ -17071,6 +17166,12 @@ label {
   position: absolute;
   top: 0;
   right: 0;
+  z-index: -1;
+}
+@media (max-width: 767px) {
+  .tp-contact-2-bg-shape {
+    display: none;
+  }
 }
 
 .tp-blog-2-area {

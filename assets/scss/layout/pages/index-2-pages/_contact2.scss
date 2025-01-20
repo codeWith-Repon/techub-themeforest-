@@ -1,8 +1,24 @@
 @use "../../../utils" as *;
 
 .tp-contact-2 {
+  &.tp-section-title{
+    @media #{$md, $sm} {
+      font-size: 35px;
+    }
+  }
   &-bg {
     background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: -1;
+    width: 69%;
+    background-repeat: no-repeat;
+
+    @media #{$xs} {
+      width: 100%;
+    }
   }
   &-title {
     width: 634px;
@@ -30,6 +46,19 @@
     background: var(--tp-common-white);
     padding: 45px 50px 28px;
 
+    @media #{$lg, $md, $sm} {
+      padding: 45px 35px 28px;
+    }
+    @media #{$md, $sm} {
+      padding: 45px 12px 28px;
+    min-width: 201px;
+    padding-top: 29px;
+    }
+    @media #{$xs} {
+      background: var(--tp-common-white);
+  padding: 35px 42px 26px;
+    }
+
     &-wrapper {
       gap: 20px;
       justify-content: end;
@@ -37,17 +66,42 @@
       bottom: 8px;
       box-shadow: 0px 0px 60px 0px rgba(0, 8, 21, 0.1);
       -webkit-box-shadow: 0px 0px 60px 0px rgba(0, 8, 21, 0.1);
+
+      @media #{$xl, $lg, $md, $sm} {
+        padding-top: 20px;
+      }
+      @media #{$md, $sm} {
+        flex-direction: column;
+        margin-right: 77px;
+  margin-left: -30px;
+      }
+      @media #{$xs} {
+        margin-right: 0;
+    margin-left: 0;
+    flex-direction: column;
+      }
     }
     &-count {
       color: var(--tp-theme-primary);
       font-size: 48px;
       margin-bottom: 4px;
       letter-spacing: -1px;
+
+      @media #{$md, $sm} {
+        font-size: 34px;
+      }
+      @media #{$xs} {
+        font-size: 34px;
+      }
     }
     &-paragraph {
       font-size: 18px;
       font-weight: 500;
       font-family: var(--tp-ff-heading);
+
+      @media #{$md, $sm} {
+        font-size: 14px;
+      }
     }
   }
   &-box {
@@ -55,6 +109,10 @@
     padding: 58px 52px;
     box-shadow: 0px 0px 60px 0px rgba(30, 22, 22, 0.06);
     margin-top: 13px;
+
+    @media #{$md, $sm} {
+      padding: 27px 29px;
+    }
 
     & input {
       margin-bottom: 20px;
@@ -78,6 +136,23 @@
   &-title {
     color: var(--tp-theme-primary);
     margin-bottom: 50px;
+
+   &.box{
+    @media #{$lg} {
+      width: 32rem;
+    }
+    @media #{$md, $sm} {
+      width: 29rem;
+    }
+    @media #{$md, $sm} {
+      margin-left: -25px;
+    }
+    @media #{$xs} {
+      margin-left: 0px;
+      width: 21rem;
+    }
+
+   }
   }
   &-btn {
     padding: 25px 0;
@@ -91,5 +166,10 @@
     position: absolute;
     top: 0;
     right: 0;
+    z-index: -1;
+
+    @media #{$xs} {
+      display: none;
+    }
   }
 }
