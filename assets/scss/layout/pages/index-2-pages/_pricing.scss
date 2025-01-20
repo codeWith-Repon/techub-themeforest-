@@ -5,6 +5,22 @@
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 0px 60px 0px rgba(139, 111, 180, 0.08);
   }
+  &.tp-btn{
+    @media #{$lg,$md,$sm} {
+      padding: 22px 32px;
+    }
+    @media #{$xs} {
+      padding: 22px 22px;
+    }
+  }
+  &.tp-btn-white{
+    @media #{$lg,$md,$sm} {
+    padding: 22px 32px;
+    }
+    @media #{$xs} {
+      padding: 22px 22px;
+    }
+  }
   &-item {
     &-wrapper {
       padding: 50px 60px;
@@ -56,6 +72,10 @@
     &-heading {
       font-size: 50px;
       letter-spacing: -2px;
+
+      @media #{$md, $sm} {
+        font-size: 40px;
+      }
     }
     &-text {
       & span {

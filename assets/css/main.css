@@ -16886,6 +16886,26 @@ label {
   background-color: rgb(255, 255, 255);
   box-shadow: 0px 0px 60px 0px rgba(139, 111, 180, 0.08);
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px) {
+  .tp-price-2.tp-btn {
+    padding: 22px 32px;
+  }
+}
+@media (max-width: 767px) {
+  .tp-price-2.tp-btn {
+    padding: 22px 22px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px) {
+  .tp-price-2.tp-btn-white {
+    padding: 22px 32px;
+  }
+}
+@media (max-width: 767px) {
+  .tp-price-2.tp-btn-white {
+    padding: 22px 22px;
+  }
+}
 .tp-price-2-item-wrapper {
   padding: 50px 60px;
 }
@@ -16922,6 +16942,11 @@ label {
 .tp-price-2-item-heading {
   font-size: 50px;
   letter-spacing: -2px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px) {
+  .tp-price-2-item-heading {
+    font-size: 40px;
+  }
 }
 .tp-price-2-item-text span {
   color: var(--tp-theme-primary);
