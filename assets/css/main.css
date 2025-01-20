@@ -16840,6 +16840,21 @@ label {
 .tp-counter-2-area {
   background: var(--tp-common-gray2);
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px) {
+  .tp-counter-2-area {
+    padding-top: 100px;
+  }
+}
+@media (max-width: 767px) {
+  .tp-counter-2-area {
+    padding-top: 100px;
+  }
+}
+@media (max-width: 767px) {
+  .tp-counter-2-wrapper {
+    padding-bottom: 12px;
+  }
+}
 .tp-counter-2-icon {
   margin-bottom: 20px;
 }

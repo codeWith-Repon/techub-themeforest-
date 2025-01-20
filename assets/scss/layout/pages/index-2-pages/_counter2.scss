@@ -3,6 +3,19 @@
 .tp-counter-2 {
   &-area {
     background: var(--tp-common-gray2);
+
+    @media #{$lg, $md, $sm} {
+      padding-top: 100px;
+    }
+    @media #{$xs} {
+      padding-top: 100px;
+    }
+  }
+  &-wrapper{
+   
+    @media #{$xs} {
+      padding-bottom: 12px;
+    }
   }
   &-icon {
     margin-bottom: 20px;
