@@ -1,0 +1,78 @@
+@use "../../../utils" as *;
+
+.tp-testimonial-3 {
+  &-area {
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  &-title-wrapper {
+    width: 35rem;
+    margin: auto;
+    // padding-top: 116px;
+  }
+  &-box {
+    background-color: rgb(255, 255, 255);
+    padding: 48px 48px 48px;
+    position: relative;
+    margin-top: 12px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 92%;
+      height: 344px;
+      background-color: var(--tp-grey-7);
+      left: 22px;
+      top: -12px;
+      z-index: -1;
+    }
+    &-title {
+      margin-top: 16px;
+
+      & h4 {
+        font-size: 22px;
+        margin-bottom: 2px;
+      }
+    }
+  }
+  &-img {
+    margin-right: 20px;
+  }
+  &-top {
+    &-content {
+      display: flex;
+      align-items: center;
+      & p {
+        &.testimonial-3 {
+          width: 91%;
+          line-height: 26px;
+        }
+      }
+    }
+    & div.d-flex {
+      gap: 141px;
+    }
+  }
+  &-icon {
+    & span {
+      color: var(--tp-grey-7);
+      font-size: 85px;
+    }
+  }
+  &-content h5 {
+    font-size: 18px;
+    margin-bottom: 14px;
+    margin-top: 20px;
+  }
+  &-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 13px;
+    margin-bottom: 2px;
+  }
+}
+
+.tp-blog-2-slider-dot
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  margin-right: 6px;
+}

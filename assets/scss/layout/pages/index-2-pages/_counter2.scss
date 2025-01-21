@@ -3,6 +3,10 @@
 .tp-counter-2 {
   &-area {
     background: var(--tp-common-gray2);
+    &.counter-3{
+      background-color: var(--tp-common-white);
+      padding-top: 10px ;
+  }
 
     @media #{$lg, $md, $sm} {
       padding-top: 100px;
