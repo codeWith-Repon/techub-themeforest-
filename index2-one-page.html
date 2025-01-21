@@ -222,17 +222,17 @@
           </div>
         </div>
       </div>
-      <div id="header-sticky" class="tp-header-bottom">
+      <div id="header-sticky" class="tp-header-bottom style-2">
         <div class="tp-header-area">
           <div class="container">
-            <div class="d-flex align-items-center tp-header-2 p-relative">
+            <div class="d-flex align-items-center tp-header-2 p-relative justify-content-sm-between">
               <div class="logo">
                 <a href="index.html">
                   <img src="assets/img/logo/logo.png" alt="" />
                 </a>
               </div>
 
-              <div class="main-menu ml-130">
+              <div class="main-menu ml-130 d-none d-xl-block">
                 <nav class="tp-main-menu-content">
                   <ul>
                     <li class="has-dropdown p-static">
@@ -368,8 +368,8 @@
                 </nav>
               </div>
 
-              <div class="main-menue-right d-flex align-items-center">
-                <div class="tp-header-find search-box-outer">
+              <div class="main-menue-right d-flex align-items-center style-2">
+                <div class="tp-header-find search-box-outer d-none d-md-block">
                   <span class="tp-header-search-icon">
                     <button>
                       <i class="flaticon-search"></i>
@@ -377,7 +377,7 @@
                   </span>
                 </div>
 
-                <div class="tp-header-shop-btn">
+                <div class="tp-header-shop-btn d-none d-md-block">
                   <div class="tp-header-shop-icon p-relative">
                     <button>
                       <i class="flaticon-shopping-cart"></i>
@@ -568,6 +568,28 @@
               <i class="fa-regular fa-arrow-right"></i>
             </button>
           </div>
+          <div
+                class="tp-slider-dots dots-color swiper-pagination-clickable swiper-pagination-bullets"
+              >
+                <span
+                  class="swiper-pagination-bullet"
+                  tabindex="0"
+                  role="button"
+                  aria-label="Go to slide 1"
+                ></span>
+                <span
+                  class="swiper-pagination-bullet"
+                  tabindex="0"
+                  role="button"
+                  aria-label="Go to slide 2"
+                ></span>
+                <span
+                  class="swiper-pagination-bullet swiper-pagination-bullet-active"
+                  tabindex="0"
+                  role="button"
+                  aria-label="Go to slide 3"
+                ></span>
+              </div>
         </div>
       </section>
       <!-- slider area end -->
@@ -589,8 +611,8 @@
         </div>
         <div class="container">
           <div class="row">
-            <div class="col-xl-6">
-              <div class="tp-about-2-thumb-left">
+            <div class="col-xl-6 col-lg-6">
+              <div class="tp-about-2-thumb-left wow fadeInLeft">
                 <div class="tp-about-2-thumb-left-img">
                   <img src="assets/img/about/about-2-img.jpg" alt="" />
 
@@ -615,8 +637,8 @@
                 </div>
               </div>
             </div>
-            <div class="col-xl-6">
-              <div class="tp-about-2-wrapper">
+            <div class="col-xl-6 col-lg-6">
+              <div class="tp-about-2-wrapper wow fadeInRight">
                 <div class="tp-section-title-wrapper mb-30">
                   <span class="tp-section-subtitle style-2"
                     >KNOW ABOUT OUR TECHUB</span
@@ -699,9 +721,9 @@
         >
           <div class="container">
             <div class="row">
-              <div class="col-xl-8">
+              <div class="col-xl-8 col-lg-8 col-md-9 col-sm-8 col-12">
                 <div class="tp-feature-2-wrapper mb-70">
-                  <div class="tp-section-title-wrapper">
+                  <div class="tp-section-title-wrapper  wow fadeInUp">
                     <span
                       class="tp-section-subtitle style-2 tp-feature-2-section-subtitle"
                     >
@@ -716,9 +738,9 @@
                   </div>
                 </div>
               </div>
-              <div class="col-xl-4">
+              <div class="col-xl-4 col-lg-4 col-md-3 col-sm-4 col-12">
                 <div class="tp-feature-2-arrow-box">
-                  <div class="tp-feature-2-arrow-icon">
+                  <div class="tp-feature-2-arrow-icon wow fadeInUp">
                     <button
                       class="slider-prev"
                       tabindex="0"
@@ -740,7 +762,7 @@
 
             <div class="row">
               <div class="tp-feature-slider-active swiper-container">
-                <div class="swiper-wrapper">
+                <div class="swiper-wrapper wow fadeInUp">
                   <div class="swiper-slide">
                     <div class="tp-feature-2-height">
                       <div class="tp-feature-2-card">
@@ -869,7 +891,7 @@
       <section class="tp-service-2-area p-relative fix">
         <div class="tp-service-2-wrapper">
           <div class="d-flex justify-content-center pb-40">
-            <div class="tp-service-2-title-wrapper text-center">
+            <div class="tp-service-2-title-wrapper text-center z-index-1 wow fadeInUp">
               <span class="tp-section-subtitle"> What We Offer </span>
               <h3 class="tp-section-title">
                 We offer quality serive for our clients
@@ -947,7 +969,7 @@
                       </a>
                     </div>
                   </div>
-
+                 
                   <!-- slide item 3 -->
 
                   <div class="swiper-slide">
@@ -980,6 +1002,38 @@
                       </a>
                     </div>
                   </div>
+
+                  <div class="swiper-slide">
+                    <div class="tp-service-2-item-wrapper p-relative">
+                      <div class="tp-service-2-thumb">
+                        <img
+                          src="assets/img/service/service-2-img2.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="tp-service-2-item-inner-content p-relative">
+                        <div class="tp-service-2-item-icon">
+                          <span>
+                            <i class="flaticon-it-service"></i>
+                          </span>
+                          <h3 class="tp-service-2-item-heading">
+                            <a href="service-details.html">Network Security</a>
+                          </h3>
+                        </div>
+                        <div class="tp-service-2-pragraph">
+                          <p>
+                            Software development outsourcing is just a tool to
+                            achieve business...
+                          </p>
+                        </div>
+                      </div>
+                      <a href="service-details.html" class="tp-service-2-btn">
+                        <span> Read more </span>
+                        <i class="flaticon-right-arrow"></i>
+                      </a>
+                    </div>
+                  </div>
+
                 </div>
               </div>
               <div
@@ -1010,10 +1064,10 @@
       <!-- service area end -->
 
       <!-- choose us area start -->
-      <div class="tp-choose-us-2-area mt-115 pb-120 p-relative">
+      <div class="tp-choose-us-2-area mt-115 pb-120 p-relative fix">
         <div class="container">
           <div class="row align-items-center">
-            <div class="col-xl-9">
+            <div class="col-xl-9 col-lg-9 wow fadeInUp">
               <div class="tp-choose-us-2-title-wrapper p-relative mb-50">
                 <div class="tp-section-title-wrapper">
                   <span class="tp-section-subtitle style-2">
@@ -1028,7 +1082,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-xl-3">
+            <div class="col-xl-3 col-lg-3">
               <div class="choose-us-2-title-btn d-flex justify-content-end">
                 <a
                   href="protfolio.html"
@@ -1041,8 +1095,8 @@
             </div>
           </div>
 
-          <div class="tp-choose-us-2-tab-item">
-            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <div class="tp-choose-us-2-tab-item wow fadeInUp">
+            <ul class="nav nav-pills mb-3 tp-choose-us-2-tab-container" id="pills-tab" role="tablist">
               <li class="nav-item" role="presentation">
                 <button
                   class="nav-link active tp-choose-us-2-tab"
@@ -1095,7 +1149,7 @@
                   aria-labelledby="pills-ChooseUs1-tab"
                 >
                   <div class="row">
-                    <div class="col-xl-6">
+                    <div class="col-xl-6 col-lg-5">
                       <div class="tp-choose-us-2-left-wrapper">
                         <div class="tp-choose-us-2-left-content">
                           <div class="tp-choose-us-2-left-heading">
@@ -1139,7 +1193,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-xl-6">
+                    <div class="col-xl-6 col-lg-7">
                       <div class="tp-choose-us-2-right-wrapper p-relative">
                         <div class="tp-choose-us-2-right-thumb">
                           <img
@@ -1319,11 +1373,11 @@
             <div
               class="tp-project-2-section-title text-center d-flex justify-content-center mb-40"
             >
-              <div class="tp-section-title-wrapper style-2">
+              <div class="tp-section-title-wrapper project-2">
                 <span class="tp-section-subtitle style-2">
                   RECENTLY COMPLETED PROJECT
                 </span>
-                <h3 class="tp-section-title style-2">
+                <h3 class="tp-section-title project-2">
                   Check our recent projects we have done
                 </h3>
               </div>
@@ -1332,8 +1386,8 @@
 
           <div class="tp-project-2-projects pt-5 pb-120">
             <div class="row">
-              <div class="col-xl-3">
-                <div class="tp-project-2-item-wrapper">
+              <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                <div class="tp-project-2-item-wrapper wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="1s">
                   <div class="tp-project-2-image p-relative">
                     <img src="assets/img/project/project-2-img1.jpg" alt="" />
                     <div class="tp-project-2-link-btn">
@@ -1371,8 +1425,8 @@
                   </div>
                 </div>
               </div>
-              <div class="col-xl-3">
-                <div class="tp-project-2-item-wrapper">
+              <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                <div class="tp-project-2-item-wrapper wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1s">
                   <div class="tp-project-2-image p-relative">
                     <img src="assets/img/project/project-2-img2.jpg" alt="" />
                     <div class="tp-project-2-link-btn">
@@ -1410,8 +1464,8 @@
                   </div>
                 </div>
               </div>
-              <div class="col-xl-3">
-                <div class="tp-project-2-item-wrapper">
+              <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                <div class="tp-project-2-item-wrapper wow fadeInUp" data-wow-delay="0.7s" data-wow-duration="1s">
                   <div class="tp-project-2-image p-relative">
                     <img src="assets/img/project/project-2-img3.jpg" alt="" />
                     <div class="tp-project-2-link-btn">
@@ -1449,8 +1503,8 @@
                   </div>
                 </div>
               </div>
-              <div class="col-xl-3">
-                <div class="tp-project-2-item-wrapper">
+              <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                <div class="tp-project-2-item-wrapper wow fadeInUp" data-wow-delay="0.9s" data-wow-duration="1s">
                   <div class="tp-project-2-image p-relative">
                     <img src="assets/img/project/project-2-img4.jpg" alt="" />
                     <div class="tp-project-2-link-btn">
@@ -1508,7 +1562,7 @@
         </div>
         <div class="container">
           <div class="row">
-            <div class="col-xl-6">
+            <div class="col-xl-6 col-lg-12 wow fadeInLeft">
               <div class="tp-technology-2-tab-wrapper p-relative">
                 <ul
                   class="nav nav-pills mb-3 tp-technology-2-tabs"
@@ -1746,7 +1800,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-xl-6">
+            <div class="col-xl-6 col-lg-12 wow fadeInDown">
               <div class="tp-technology-2-right-position">
                 <div class="tp-technology-2-right">
                   <div class="tp-technology-2-right-wrapper">
@@ -1790,8 +1844,8 @@
       <section class="tp-counter-2-area pt-185 pb-100">
         <div class="container">
           <div class="row">
-            <div class="col-xl-3">
-              <div class="tp-counter-2-wrapper text-center">
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+              <div class="tp-counter-2-wrapper text-center wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="1s">
                 <div class="tp-counter-2-icon">
                   <span>
                     <i class="flaticon-light-bulb"></i>
@@ -1813,8 +1867,8 @@
               </div>
             </div>
 
-            <div class="col-xl-3">
-              <div class="tp-counter-2-wrapper text-center">
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+              <div class="tp-counter-2-wrapper text-center wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1s">
                 <div class="tp-counter-2-icon">
                   <span>
                     <i class="flaticon-planning"></i>
@@ -1836,8 +1890,8 @@
               </div>
             </div>
 
-            <div class="col-xl-3">
-              <div class="tp-counter-2-wrapper text-center">
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+              <div class="tp-counter-2-wrapper text-center wow fadeInUp" data-wow-delay="0.7s" data-wow-duration="1s">
                 <div class="tp-counter-2-icon">
                   <span>
                     <i class="flaticon-technical-support"></i>
@@ -1859,8 +1913,8 @@
               </div>
             </div>
 
-            <div class="col-xl-3">
-              <div class="tp-counter-2-wrapper text-center">
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+              <div class="tp-counter-2-wrapper text-center wow fadeInUp" data-wow-delay="0.9s" data-wow-duration="1s">
                 <div class="tp-counter-2-icon">
                   <span>
                     <i class="flaticon-success"></i>
@@ -1904,8 +1958,8 @@
 
           <div class="tp-price-2-color">
             <div class="row">
-              <div class="col-xl-4">
-                <div class="tp-price-2-item-wrapper mb-20">
+              <div class="col-lg-4 col-md-6">
+                <div class="tp-price-2-item-wrapper mb-20 wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="1s">
                   <div class="tp-price-2-item-top">
                     <div class="tp-price-2-item-icon">
                       <span>Basic</span>
@@ -1942,7 +1996,7 @@
                         </li>
                       </ul>
                       <div class="tp-price-2-btn">
-                        <a href="contact.html" class="tp-btn">
+                        <a href="contact.html" class="tp-btn tp-price-2">
                           <span>Choose a Plan</span>
                         </a>
                       </div>
@@ -1950,8 +2004,8 @@
                   </div>
                 </div>
               </div>
-              <div class="col-xl-4">
-                <div class="tp-price-2-item-wrapper mb-20 active p-relative">
+              <div class="col-lg-4 col-md-6">
+                <div class="tp-price-2-item-wrapper mb-20 wow fadeInUp active p-relative" data-wow-delay="0.6s" data-wow-duration="1s">
                   <div class="tp-price-2-item-top">
                     <div class="tp-price-2-item-icon">
                       <span>Basic</span>
@@ -1988,7 +2042,7 @@
                         </li>
                       </ul>
                       <div class="tp-price-2-btn">
-                        <a href="contact.html" class="tp-btn-white">
+                        <a href="contact.html" class="tp-btn-white tp-price-2">
                           <span>Choose a Plan</span>
                         </a>
                       </div>
@@ -1999,8 +2053,8 @@
                   </div>
                 </div>
               </div>
-              <div class="col-xl-4">
-                <div class="tp-price-2-item-wrapper mb-20">
+              <div class="col-lg-4 col-md-6">
+                <div class="tp-price-2-item-wrapper mb-20 wow fadeInUp" data-wow-delay="0.9s" data-wow-duration="1s">
                   <div class="tp-price-2-item-top">
                     <div class="tp-price-2-item-icon">
                       <span>Basic</span>
@@ -2037,7 +2091,7 @@
                         </li>
                       </ul>
                       <div class="tp-price-2-btn">
-                        <a href="contact.html" class="tp-btn">
+                        <a href="contact.html" class="tp-btn tp-price-2">
                           <span>Choose a Plan</span>
                         </a>
                       </div>
@@ -2052,16 +2106,16 @@
       <!-- Pricing area end -->
 
       <!-- contact area start -->
-      <section class="tp-contact-2-area fix">
+      <section class="tp-contact-2-area fix p-relative">
+        <div class="tp-contact-2-bg" data-background="assets/img/contact/contact-bg.jpg"></div>
         <div
-          class="tp-contact-2-bg pt-120 p-relative"
-          data-background="assets/img/contact/contact-bg.jpg"
+          class=" pt-120"
         >
-          <div class="container">
+          <div class="container ">
             <div class="row">
-              <div class="col-xl-7">
-                <div class="tp-contact-2-title">
-                  <h2 class="tp-section-title mb-50">
+              <div class="col-xl-7 col-lg-7 col-md-6">
+                <div class="tp-contact-2-title box wow fadeInLeft">
+                  <h2 class="tp-section-title tp-contact-2 mb-50 ">
                     Need any technology service solution
                   </h2>
                   <div class="tp-contact-2-button mb-70">
@@ -2071,7 +2125,7 @@
                   </div>
                 </div>
                 <div
-                  class="tp-contact-2-counter-wrapper d-flex text-center mr-20"
+                  class="tp-contact-2-counter-wrapper d-flex text-center mr-20 wow fadeInLeft"
                 >
                   <div class="tp-contact-2-counter">
                     <h3 class="tp-contact-2-counter-count">
@@ -2102,8 +2156,8 @@
                 </div>
               </div>
 
-              <div class="col-xl-5">
-                <div class="tp-contact-2-box">
+              <div class="col-xl-5 col-lg-5 col-md-6">
+                <div class="tp-contact-2-box wow fadeInRight">
                   <h3 class="tp-contact-2-title">Request a service</h3>
 
                   <form action="">
@@ -2124,7 +2178,7 @@
               </div>
             </div>
           </div>
-          <div class="tp-contact-2-bg-shape">
+          <div class="tp-contact-2-bg-shape wow fadeInLeft">
             <img src="assets/img/contact/contact-man-img.png" alt="" />
           </div>
         </div>
@@ -2134,7 +2188,7 @@
       <!-- Blog area start  -->
       <section class="tp-blog-2-area fix">
         <div class="container">
-          <div class="tp-blog-2-title-wrapper text-center">
+          <div class="tp-blog-2-title-wrapper text-center wow fadeInUp">
             <span class="tp-section-subtitle style-2"> OUR LATEST BLOG </span>
             <h2 class="tp-section-title">Read our blog & post</h2>
           </div>
@@ -2143,7 +2197,7 @@
               <div class="swiper-wrapper">
                 <!-- item 1 -->
                 <div class="tp-blog-2-slider-item swiper-slide">
-                  <div class="tp-blog-2-slider-item-wrapper">
+                  <div class="tp-blog-2-slider-item-wrapper wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="1s">
                     <div class="tp-blog-2-slider-image">
                       <a href="blog-details.html" class="">
                         <img src="assets/img/blog/blog-2-img1.jpg" alt="" />
@@ -2174,7 +2228,7 @@
 
                 <!-- item 2 -->
                 <div class="tp-blog-2-slider-item swiper-slide">
-                  <div class="tp-blog-2-slider-item-wrapper">
+                  <div class="tp-blog-2-slider-item-wrapper  wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="1s">
                     <div class="tp-blog-2-slider-image">
                       <a href="blog-details.html" class="">
                         <img src="assets/img/blog/blog-2-img2.jpg" alt="" />
@@ -2205,7 +2259,7 @@
 
                 <!-- item 3 -->
                 <div class="tp-blog-2-slider-item swiper-slide">
-                  <div class="tp-blog-2-slider-item-wrapper">
+                  <div class="tp-blog-2-slider-item-wrapper  wow fadeInUp" data-wow-delay="0.6s" data-wow-duration="1s">
                     <div class="tp-blog-2-slider-image">
                       <a href="blog-details.html" class="">
                         <img src="assets/img/blog/blog-2-img3.jpg" alt="" />
@@ -2236,7 +2290,7 @@
 
                 <!-- item 4 -->
                 <div class="tp-blog-2-slider-item swiper-slide">
-                  <div class="tp-blog-2-slider-item-wrapper">
+                  <div class="tp-blog-2-slider-item-wrapper  wow fadeInUp" data-wow-delay="0.8s" data-wow-duration="1s">
                     <div class="tp-blog-2-slider-image">
                       <a href="blog-details.html" class="">
                         <img src="assets/img/blog/blog-2-img4.jpg" alt="" />
@@ -2282,8 +2336,8 @@
         <div class="tp-footer-2-top">
           <div class="container">
             <div class="row">
-              <div class="col-xl-3">
-                <div class="tp-footer-2-widget">
+              <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                <div class="tp-footer-2-widget wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="1s">
                   <div class="tp-footer-2-logo pb-30">
                     <a href="#">
                       <img src="assets/img/footer/footer-logo.png" alt="" />
@@ -2311,8 +2365,8 @@
                   </div>
                 </div>
               </div>
-              <div class="col-xl-3">
-                <div class="tp-footer-2-widget">
+              <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                <div class="tp-footer-2-widget  wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1s">
                   <h4 class="tp-footer-title">Usefull links</h4>
                   <div class="tp-footer-2-list">
                     <ul>
@@ -2331,8 +2385,8 @@
                 </div>
               </div>
 
-              <div class="col-xl-3">
-                <div class="tp-footer-2-widget">
+              <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                <div class="tp-footer-2-widget footer-2  wow fadeInUp" data-wow-delay="0.7s" data-wow-duration="1s">
                   <h4 class="tp-footer-title">Contact info</h4>
                   <div class="tp-footer-2-list">
                     <div class="tp-footer-2-widget-member d-flex mb-20">
@@ -2372,8 +2426,8 @@
                 </div>
               </div>
 
-              <div class="col-xl-3">
-                <div class="tp-footer-2-widget">
+              <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                <div class="tp-footer-2-widget footer-2  wow fadeInUp" data-wow-delay="0.9s" data-wow-duration="1s">
                   <h4 class="tp-footer-title">Subscribe</h4>
                   <div class="tp-footer-2-wrapper">
                     <p class="tp-footer-2-peragraph">
@@ -2409,9 +2463,9 @@
       </div>
       <div class="tp-footer-2-bottom pt-30 pb-15">
         <div class="container-fluid">
-          <div class="tp-footer-2-copy-right">
+          <div class="tp-footer-2-copy-right wow fadeInUp">
             <p class="tp-footer-2-copy-right-text text-center">
-              Full Copyright & Design By @<a href="#">Theme pure</a> – 2024
+              Full Copyright & Design By @<a href="#">Theme pure</a> – 2025
             </p>
           </div>
         </div>
