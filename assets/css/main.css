@@ -17412,13 +17412,10 @@ label {
   line-height: 62px;
 }
 
-.tp-testimonial-3-area {
-  background-size: cover;
-  background-repeat: no-repeat;
-}
 .tp-testimonial-3-title-wrapper {
   width: 35rem;
   margin: auto;
+  padding-top: 116px;
 }
 .tp-testimonial-3-box {
   background-color: rgb(255, 255, 255);
