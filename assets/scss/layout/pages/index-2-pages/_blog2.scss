@@ -91,6 +91,10 @@
     &:hover {
       color: var(--tp-theme-primary);
     }
+
+    @media #{$md, $sm, $xs} {
+      font-size: 24px;
+    }
   }
   &-btn {
     display: inline-flex;

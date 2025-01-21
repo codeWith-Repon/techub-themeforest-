@@ -15794,6 +15794,11 @@ label {
 .tp-blog-2-content-heading:hover {
   color: var(--tp-theme-primary);
 }
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
+  .tp-blog-2-content-heading {
+    font-size: 24px;
+  }
+}
 .tp-blog-2-btn {
   display: inline-flex;
   align-items: center;
@@ -15946,6 +15951,11 @@ label {
 }
 .tp-footer-2-list ul li a:hover {
   color: var(--tp-common-white);
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
+  .tp-footer-2-widget.footer-2 {
+    margin-top: 35px;
+  }
 }
 .tp-footer-2-widget-member {
   gap: 10px;

@@ -78,6 +78,11 @@
     }
   }
   &-widget {
+    &.footer-2{
+      @media #{$md, $sm, $xs} {
+        margin-top: 35px;
+      }
+    }
     &-member {
       gap: 10px;
     }
