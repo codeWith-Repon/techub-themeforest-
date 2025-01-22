@@ -16106,13 +16106,14 @@ label {
 
 .tp-slider-3-bg {
   position: absolute;
-  top: 0;
+  top: -106px;
   left: 0;
   width: 100%;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   z-index: -1;
+  height: 966px;
 }
 .tp-slider-3-sub-title {
   font-size: 14px;
@@ -16126,7 +16127,7 @@ label {
 .tp-slider-3-content {
   position: relative;
   z-index: 1;
-  padding: 253px 0 231px;
+  padding: 150px 0 0;
 }
 .tp-slider-3-title {
   font-size: 80px;
@@ -16196,25 +16197,25 @@ label {
 }
 .tp-slider-3-shape2 {
   position: absolute;
-  top: 126px;
-  left: 91px;
+  top: 58px;
+  left: 114px;
   z-index: -1;
   animation: bounce-thum-3 4s forwards infinite alternate;
+  height: 706px;
 }
 .tp-slider-3-shape1 {
   position: absolute;
-  top: 600px;
+  top: 478px;
   left: -61px;
   z-index: -1;
   animation: bounce-thum-2 1s ease-in-out 0.1s forwards infinite alternate;
 }
 .tp-slider-3-main-img {
-  margin: 127px 0px 0px 67px;
+  margin: 24px 0px 0px 67px;
 }
 
 .tp-feature-3-area {
-  margin-top: 920px;
-  padding: 120px;
+  padding: 98px;
 }
 .tp-feature-3-wrapper {
   box-shadow: 0px 0px 40px 0px rgba(80, 34, 149, 0.06);
