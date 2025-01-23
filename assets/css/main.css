@@ -5649,6 +5649,21 @@ body .ui-tooltip {
   width: 100%;
 }
 
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
+  .tp-header-3 {
+    padding: 20px 0;
+  }
+}
+.tp-header-3-button {
+  display: flex;
+  justify-content: center;
+  gap: 27px;
+}
+.tp-header-3-bar {
+  color: var(--tp-common-white);
+  font-size: 30px;
+}
+
 /*----------------------------------------*/
 /*  4.1 Main menu css
 /*----------------------------------------*/
@@ -16115,6 +16130,11 @@ label {
   z-index: -1;
   height: 966px;
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
+  .tp-slider-3-bg {
+    top: -212px;
+  }
+}
 .tp-slider-3-sub-title {
   font-size: 14px;
   letter-spacing: 1px;
@@ -16209,6 +16229,12 @@ label {
   left: -61px;
   z-index: -1;
   animation: bounce-thum-2 1s ease-in-out 0.1s forwards infinite alternate;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
+  .tp-slider-3-shape1 {
+    top: 494px;
+    left: -52px;
+  }
 }
 .tp-slider-3-main-img {
   margin: 24px 0px 0px 67px;

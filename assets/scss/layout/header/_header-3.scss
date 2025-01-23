@@ -1,0 +1,16 @@
+@use '../../utils' as *;
+
+.tp-header-3{
+    @media #{$lg,$md, $sm, $xs} {
+        padding: 20px 0;
+    }
+    &-button{
+      display: flex;
+      justify-content: center;
+      gap: 27px;
+    }
+    &-bar {
+      color: var(--tp-common-white);
+      font-size: 30px;
+    }
+  }
