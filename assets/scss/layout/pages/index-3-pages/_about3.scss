@@ -3,12 +3,38 @@
 .tp-about-3 {
   &-thumb {
     margin-left: -93px;
+
+    @media #{$lg,$md, $sm, $xs} {
+      margin-left: 0;
+      text-align: center;
+    }
+    & img{
+      @media #{$lg,$md, $sm, $xs} {
+        width: 75%;
+      }
+      @media #{$sm, $xs} {
+        width: 100%;
+      }
+    }
   }
   &-shape1 {
     position: absolute;
     top: -50px;
     left: -345px;
     z-index: -1;
+
+    @media #{$lg,$md, $sm, $xs} {
+      left: -70px;
+      top: -86px;
+    }
+    @media #{$md, $sm, $xs} {
+      left: -172px;
+    top: -81px;
+    }
+    @media #{$sm, $xs} {
+      left: -276px;
+      top: -94px;
+    }
   }
 
   &-shape2 {
@@ -17,6 +43,19 @@
     left: -102px;
     z-index: -2;
     animation: bounce-thum-2 1s ease-in-out 0.1s forwards infinite alternate;
+
+    @media #{$lg,$md, $sm, $xs} {
+      top: 223px;
+  left: 125px;
+    }
+    @media #{$md, $sm, $xs} {
+      top: 177px;
+      left: 116px;
+    }
+    @media #{$sm, $xs} {
+      top: 79px;
+    left: 11px;
+    }
   }
   &-shape3 {
     position: absolute;
@@ -24,6 +63,19 @@
     right: 46px;
     z-index: -1;
     animation: moving 8s linear infinite;
+
+    @media #{$lg,$md, $sm, $xs} {
+      top: 204px;
+  right: 173px;
+    }
+    @media #{$md, $sm, $xs} {
+      top: 187px;
+      right: 113px;
+    }
+    @media #{$sm, $xs} {
+      top: 112px;
+      right: -12px;
+    }
   }
   &-item {
     display: flex;
@@ -42,7 +94,12 @@
         height: 46px;
       }
     }
-
+    &-wrapper > div{
+      @media #{$md, $sm, $xs} {
+        margin-left: 0;
+      }
+    
+    }
     
   }
   &-counter {
@@ -89,4 +146,35 @@
     color: var(--tp-heading-primary);
     font-weight: 700;
   }
+  &-content-wrapper {
+    @media #{$lg,$md, $sm, $xs} {
+      margin-top: 44px;
+    }
+  }
+  &-section-title{
+    @media #{$md, $sm, $xs} {
+      margin-left: 0;
+    }
+  }
+  &-call-number{
+    @media #{$md, $sm, $xs} {
+      margin-left: 0;
+    }
+  }
+  &-buttons{
+    @media #{$md, $sm, $xs} {
+      margin-left: 0;
+    }
+    @media #{$xs} {
+      flex-direction: column;
+      gap: 22px;
+    }
+  }
+  &-call-item{
+    @media #{$xs} {
+      margin-left: 0;
+    }
+  }
 }
+
+

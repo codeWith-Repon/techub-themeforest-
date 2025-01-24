@@ -17273,11 +17273,45 @@ label {
 .tp-about-3-thumb {
   margin-left: -93px;
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
+  .tp-about-3-thumb {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
+  .tp-about-3-thumb img {
+    width: 75%;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
+  .tp-about-3-thumb img {
+    width: 100%;
+  }
+}
 .tp-about-3-shape1 {
   position: absolute;
   top: -50px;
   left: -345px;
   z-index: -1;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
+  .tp-about-3-shape1 {
+    left: -70px;
+    top: -86px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
+  .tp-about-3-shape1 {
+    left: -172px;
+    top: -81px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
+  .tp-about-3-shape1 {
+    left: -276px;
+    top: -94px;
+  }
 }
 .tp-about-3-shape2 {
   position: absolute;
@@ -17286,12 +17320,48 @@ label {
   z-index: -2;
   animation: bounce-thum-2 1s ease-in-out 0.1s forwards infinite alternate;
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
+  .tp-about-3-shape2 {
+    top: 223px;
+    left: 125px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
+  .tp-about-3-shape2 {
+    top: 177px;
+    left: 116px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
+  .tp-about-3-shape2 {
+    top: 79px;
+    left: 11px;
+  }
+}
 .tp-about-3-shape3 {
   position: absolute;
   top: 197px;
   right: 46px;
   z-index: -1;
   animation: moving 8s linear infinite;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
+  .tp-about-3-shape3 {
+    top: 204px;
+    right: 173px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
+  .tp-about-3-shape3 {
+    top: 187px;
+    right: 113px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
+  .tp-about-3-shape3 {
+    top: 112px;
+    right: -12px;
+  }
 }
 .tp-about-3-item {
   display: flex;
@@ -17305,6 +17375,11 @@ label {
 }
 .tp-about-3-item:hover .tp-about-3-counter::before {
   height: 46px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
+  .tp-about-3-item-wrapper > div {
+    margin-left: 0;
+  }
 }
 .tp-about-3-counter {
   width: 155px;
@@ -17344,6 +17419,37 @@ label {
   font-size: 16px;
   color: var(--tp-heading-primary);
   font-weight: 700;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
+  .tp-about-3-content-wrapper {
+    margin-top: 44px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
+  .tp-about-3-section-title {
+    margin-left: 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
+  .tp-about-3-call-number {
+    margin-left: 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
+  .tp-about-3-buttons {
+    margin-left: 0;
+  }
+}
+@media (max-width: 767px) {
+  .tp-about-3-buttons {
+    flex-direction: column;
+    gap: 22px;
+  }
+}
+@media (max-width: 767px) {
+  .tp-about-3-call-item {
+    margin-left: 0;
+  }
 }
 
 .tp-section-title-wrapper.style-3 {
