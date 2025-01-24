@@ -21,10 +21,37 @@
     width: 291px;
     min-height: 188px;
     background: var(--tp-common-white);
+
+    @media #{$xl} {
+      left: 32px;
+    }
+    @media #{$lg} {
+      width: 390px;
+      top: 266px;
+    }
+    @media #{$md} {
+      width: 288px;
+    top: 204px;
+    left: 23px;
+    }
+    @media #{$xs} {
+      width: 84%;
+      top: 61%;
+      left: 8%;
+    }
+    @media #{$sm} {
+      width: 433px;
+      top: 357px;
+      left: 41px;
+    }
   }
   &-item-icon {
     margin-top: 75px;
     text-align: center;
+
+    @media #{$sm, $xs} {
+      padding: 0 45px 1px;
+    }
     & span {
       position: absolute;
       top: -49px;
@@ -57,6 +84,36 @@
     justify-content: center;
     gap: 11px;
     transition: 0.4s;
+
+    @media #{$xl,$lg} {
+      left: 32px;
+    }
+    @media #{$lg,$md, $sm, $xs} {
+      width: 390px;
+      bottom: 20px;
+    }
+    @media #{$md, $sm, $xs} {
+      width: 289px;
+      bottom: -9px;
+      left: 23px;
+    }
+    @media #{$xs} {
+      width: 84%;
+      bottom: -15px;
+      left: 8%;
+    }
+    @media #{$sm} {
+      width: 433px;
+      bottom: -9px;
+      left: 41px;
+    }
+    @media screen and (max-width: 550px){
+      top: 554px;
+    }
+    @media screen and (max-width: 530px){
+     display: none;
+    }
+   
   }
   &-paragraph {
     padding-bottom: 10px;
@@ -64,6 +121,13 @@
 }
 
 .tp-service-2-item-wrapper.style-3 {
+
+  @media #{$md, $sm, $xs} {
+    margin-bottom: 20px;
+  }
+  @media #{ $xs} {
+    margin-bottom: 50px;
+  }
   &:hover {
     .tp-service-3 {
       &-btn {
