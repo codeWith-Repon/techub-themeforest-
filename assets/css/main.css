@@ -14499,6 +14499,9 @@ label {
 .tp-section-title-wrapper {
   max-width: 683px;
 }
+.tp-section-title-wrapper.index-one {
+  max-width: 100%;
+}
 @media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px) {
   .tp-section-title-wrapper {
     max-width: 535px;

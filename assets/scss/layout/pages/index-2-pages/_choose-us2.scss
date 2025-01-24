@@ -19,6 +19,9 @@
 }
 
 .tp-section-title-wrapper {
+  &.index-one{
+    max-width: 100%;
+  }
   max-width: 683px;
   @media #{$xl, $lg, $md, $sm} {
     max-width: 535px;
