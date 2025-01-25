@@ -1,0 +1,46 @@
+@use "../../../utils" as *;
+
+.tp-subscribe-3 {
+  &-area {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  &-title {
+    max-width: 100%;
+  }
+  &-heading {
+    width: 64%;
+    margin: auto;
+    color: var(--tp-common-white);
+    padding-bottom: 40px;
+  }
+  &-subtitle {
+    color: var(--tp-common-white);
+  }
+  &-box {
+    width: 470px;
+    margin: auto;
+
+    & input {
+      height: 68px;
+      background-color: var(--tp-common-white);
+      border: 5px solid var(--tp-text-24);
+      padding-right: 140px;
+
+      &:focus{
+        border: 5px solid var(--tp-text-24);
+      }
+    }
+  }
+  &-btn {
+    background: var(--tp-text-25);
+    color: var(--tp-common-white);
+    padding: 14px 35px;
+    display: inline-block;
+    font-weight: 700;
+    font-family: var(--tp-ff-heading);
+    border: 5px solid var(--tp-text-24);
+    border-left: none;
+  }
+}
