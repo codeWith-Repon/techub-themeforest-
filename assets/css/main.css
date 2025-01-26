@@ -18192,11 +18192,41 @@ label {
   width: 35rem;
   margin: auto;
 }
+@media (max-width: 767px) {
+  .tp-testimonial-3-title-wrapper {
+    width: 17rem;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .tp-testimonial-3-title-wrapper {
+    width: 25rem;
+  }
+}
+@media (max-width: 767px) {
+  .tp-testimonial-3-icon {
+    display: none;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .tp-testimonial-3-icon {
+    display: inline-block;
+  }
+}
 .tp-testimonial-3-box {
   background-color: rgb(255, 255, 255);
   padding: 48px 48px 48px;
   position: relative;
   margin-top: 12px;
+}
+@media (max-width: 767px) {
+  .tp-testimonial-3-box {
+    padding: 48px 22px 48px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .tp-testimonial-3-box {
+    padding: 48px 48px 48px;
+  }
 }
 .tp-testimonial-3-box::before {
   content: "";
@@ -18215,8 +18245,33 @@ label {
   font-size: 22px;
   margin-bottom: 2px;
 }
+@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
+  .tp-testimonial-3-box-title p {
+    width: 177px;
+  }
+}
+@media (max-width: 767px) {
+  .tp-testimonial-3-box-title p {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .tp-testimonial-3-box-title p {
+    width: 177px;
+  }
+}
 .tp-testimonial-3-img {
   margin-right: 20px;
+}
+@media (max-width: 767px) {
+  .tp-testimonial-3-item {
+    margin: 0 21px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .tp-testimonial-3-item {
+    margin: 0;
+  }
 }
 .tp-testimonial-3-top-content {
   display: flex;
@@ -18228,6 +18283,31 @@ label {
 }
 .tp-testimonial-3-top div.d-flex {
   gap: 141px;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .tp-testimonial-3-top div.d-flex {
+    gap: 108px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .tp-testimonial-3-top div.d-flex {
+    gap: 30px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .tp-testimonial-3-top div.d-flex {
+    gap: 272px;
+  }
+}
+@media (max-width: 767px) {
+  .tp-testimonial-3-top div.d-flex {
+    gap: 7px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .tp-testimonial-3-top div.d-flex {
+    gap: 93px;
+  }
 }
 .tp-testimonial-3-icon span {
   color: var(--tp-grey-7);

@@ -9,12 +9,34 @@
     width: 35rem;
     margin: auto;
     // padding-top: 116px;
+
+    @media #{$xs}{
+      width: 17rem;
+    }
+    @media #{$sm}{
+      width: 25rem;
+    }
+  }
+  &-icon{
+    @media #{$xs} {
+      display: none;
+    }
+    @media #{$sm} {
+      display: inline-block;
+    }
   }
   &-box {
     background-color: rgb(255, 255, 255);
     padding: 48px 48px 48px;
     position: relative;
     margin-top: 12px;
+
+    @media #{$xs} {
+      padding: 48px 22px 48px;
+    }
+    @media #{$sm} {
+      padding: 48px 48px 48px;
+    }
 
     &::before {
       content: "";
@@ -33,10 +55,30 @@
         font-size: 22px;
         margin-bottom: 2px;
       }
+
+      & p{
+        @media #{$xl,$lg,$md} {
+          width: 177px;
+        }
+        @media #{$xs} {
+          width: 100%;
+        }
+        @media #{$sm} {
+          width: 177px;
+        }
+      }
     }
   }
   &-img {
     margin-right: 20px;
+  }
+  &-item{
+    @media #{$xs} {
+      margin: 0 21px;
+    }
+    @media #{$sm} {
+      margin: 0;
+    }
   }
   &-top {
     &-content {
@@ -51,6 +93,22 @@
     }
     & div.d-flex {
       gap: 141px;
+
+      @media #{$xl} {
+      gap: 108px;
+      }
+      @media #{$lg} {
+        gap: 30px;
+      }
+      @media #{$md} {
+        gap: 272px;
+      }
+      @media #{$xs} {
+        gap: 7px;
+      }
+      @media #{$sm} {
+        gap: 93px;
+      }
     }
   }
   &-icon {
