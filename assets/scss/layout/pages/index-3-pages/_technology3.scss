@@ -9,6 +9,13 @@
     width: 100%;
     background: top left no-repeat;
     z-index: -1;
+
+    @media #{$xs} {
+      top: 67px;
+    }
+    @media #{$sm} {
+      top: 0px;
+    }
   }
   &-section-titles .style-3 {
     color: var(--tp-common-white);
@@ -22,6 +29,13 @@
 
     @media #{$lg,$md, $sm, $xs} {
       gap: 0;
+    }
+    @media #{$xs} {
+      display: block;
+    }
+    @media #{$sm} {
+      gap: 0;
+      display: flex;
     }
   }
   &-icon {

@@ -17634,6 +17634,16 @@ label {
   background: top left no-repeat;
   z-index: -1;
 }
+@media (max-width: 767px) {
+  .tp-technology-3-bg {
+    top: 67px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .tp-technology-3-bg {
+    top: 0px;
+  }
+}
 .tp-technology-3-section-titles .style-3 {
   color: var(--tp-common-white);
 }
@@ -17647,6 +17657,17 @@ label {
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
   .tp-technology-3-box {
     gap: 0;
+  }
+}
+@media (max-width: 767px) {
+  .tp-technology-3-box {
+    display: block;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .tp-technology-3-box {
+    gap: 0;
+    display: flex;
   }
 }
 .tp-technology-3-icon {
@@ -18666,6 +18687,7 @@ label {
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .tp-subscribe-3-box {
+    display: flex !important;
     width: 460px;
     margin: auto;
   }
@@ -18707,7 +18729,14 @@ label {
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .tp-subscribe-3-btn {
+    margin-top: 0;
     border-left: none;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
+  .tp-section-title-wrapper.index-one {
+    margin-bottom: 20px;
   }
 }
 
