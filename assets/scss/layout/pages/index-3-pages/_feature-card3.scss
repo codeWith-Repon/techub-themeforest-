@@ -4,6 +4,13 @@
   &-wrapper {
     max-width: 1630px;
     margin: 0 auto;
+
+    @media #{$x4l} {
+      margin: 0 90px;
+    }
+    // @media #{$x3l} {
+    //   margin: 0 90px;
+    // }
   }
   &-item {
     background-color: var(--tp-common-white);
@@ -12,6 +19,17 @@
     box-shadow: 0px 2px 40px 0px rgba(16, 23, 40, 0.06);
     position: relative;
     z-index: 4;
+
+    @media #{$xl} {
+      padding: 35px 16px 45px 34px;
+    }
+    @media #{$xs} {
+      padding: 35px 38px 45px 13px;
+      margin-left: 0;
+    }
+    @media #{$sm} {
+     margin-left: 0;
+    }
 
     &::before {
       position: absolute;
@@ -23,6 +41,12 @@
       right: 0;
       z-index: -1;
       transition: 0.3s;
+    }
+
+    &-content p{
+      @media #{$xl} {
+        font-size: 14px;
+      }
     }
 
     &:hover{
@@ -40,6 +64,11 @@
       left: -109px;
       top: 70px;
       z-index: -1;
+
+      @media #{$xl} {
+        top: 88px;
+        left: -80px;
+      }
     }
     &-image {
       font-size: 220px;
@@ -50,6 +79,13 @@
       background-clip: text;
       background-position: center 65%;
       background-repeat: no-repeat;
+
+      @media #{$xl} {
+        font-size: 180px;
+      }
+      @media #{$sm, $xs} {
+        display: none;
+      }
     }
     &-icon {
       & span {
@@ -69,11 +105,30 @@
         margin-right: 18px;
         transition: 0.4s;
         cursor: pointer;
+
+        @media #{$xl} {
+          font-size: 25px;
+          margin-right: 4px;
+          margin-left: -19px;
+  margin-top: 3px;
+        }
       }
     }
     &-title {
       margin-bottom: 16px;
       font-size: 26px;
+
+      @media #{$xl} {
+        font-size: 22px;
+      }
+      @media #{$xs} {
+        margin-bottom: 14px;
+  font-size: 20px;
+      }
+      @media #{$sm} {
+        margin-bottom: 15px;
+  font-size: 20px;
+      }
     }
   }
 }
