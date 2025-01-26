@@ -18337,11 +18337,41 @@ label {
   height: 326px;
   z-index: -1;
 }
+@media only screen and (min-width: 1700px) and (max-width: 1800px) {
+  .tp-faq-3-bg {
+    left: -32px;
+  }
+}
+@media only screen and (min-width: 1600px) and (max-width: 1700px) {
+  .tp-faq-3-bg {
+    left: -60px;
+  }
+}
+@media only screen and (min-width: 1400px) and (max-width: 1599px) {
+  .tp-faq-3-bg {
+    left: -157px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .tp-faq-3-bg {
+    left: -293px;
+  }
+}
 .tp-faq-3.tp-section-subtitle {
   color: var(--tp-common-white);
 }
 .tp-faq-3.tp-section-title {
   color: var(--tp-common-white);
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .tp-faq-3.tp-section-title {
+    width: 89%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
+  .tp-faq-3.tp-section-title {
+    width: 63%;
+  }
 }
 .tp-faq-3.tp-section-title-wrapper {
   max-width: 524px;
@@ -18358,6 +18388,11 @@ label {
 }
 .tp-faq-3-accordion-item-wrapper {
   margin-right: 77px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
+  .tp-faq-3-accordion-item-wrapper {
+    margin-right: 0;
+  }
 }
 .tp-faq-3-accordion-button {
   color: var(--tp-heading-primary) !important;
@@ -18394,6 +18429,16 @@ label {
   margin-top: 10px;
   padding: 60px 65px;
 }
+@media (max-width: 767px) {
+  .tp-faq-3-contact-box {
+    padding: 60px 26px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .tp-faq-3-contact-box {
+    padding: 60px 26px;
+  }
+}
 .tp-faq-3-contact-box > span {
   font-size: 14px;
   letter-spacing: 1px;
@@ -18428,6 +18473,16 @@ label {
   font-size: 38px;
   letter-spacing: -1px;
   margin-bottom: 46px;
+}
+@media (max-width: 767px) {
+  .tp-faq-3-form-title {
+    font-size: 32px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .tp-faq-3-form-title {
+    font-size: 35px;
+  }
 }
 
 .tp-feature-card-3-wrapper {
