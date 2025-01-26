@@ -14,6 +14,16 @@
     margin: auto;
     color: var(--tp-common-white);
     padding-bottom: 40px;
+
+    @media #{$md} {
+      width: 83%;
+    }
+    @media #{$xs} {
+      width: 100%;
+    }
+    @media #{$sm} {
+      width: 90%;
+    }
   }
   &-subtitle {
     color: var(--tp-common-white);
@@ -21,12 +31,29 @@
   &-box {
     width: 470px;
     margin: auto;
+    
+    @media #{$xs} {
+      width: 67%;
+      margin: unset;
+      display: block !important;
+    }
+    @media #{$sm} {
+      width: 460px;
+  margin: auto;
+    }
 
     & input {
       height: 68px;
       background-color: var(--tp-common-white);
       border: 5px solid var(--tp-text-24);
       padding-right: 140px;
+
+      @media #{$xs} {
+        padding-right: 9px;
+      }
+      @media #{$sm} {
+        padding-right: 130px;
+      }
 
       &:focus{
         border: 5px solid var(--tp-text-24);
@@ -42,5 +69,13 @@
     font-family: var(--tp-ff-heading);
     border: 5px solid var(--tp-text-24);
     border-left: none;
+
+    @media #{$xs} {
+      margin-top: 20px;
+      border-left:  5px solid var(--tp-text-24);
+    }
+    @media #{$sm} {
+      border-left: none;
+    }
   }
 }
