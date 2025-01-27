@@ -1,0 +1,105 @@
+@use "../../../utils" as *;
+
+
+.tp-slider-4{
+    &-height {
+        height: 840px;
+        overflow: hidden;
+    }
+    &-bg-color {
+        background: var(--tp-grey-9);
+        width: 100%;
+        height: 996px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    &-sub-title {
+        font-size: 14px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        display: inline-block;
+        color: var(--tp-theme-primary);
+        font-weight: 600;
+        box-shadow: 0px 8px 40px 0px rgba(71, 46, 53, 0.12);
+        padding: 2px 10px;
+        margin-bottom: 13px;
+    }
+    &-title {
+        font-size: 80px;
+        letter-spacing: -3px;
+        line-height: 1.14;
+        color: var(--tp-heading-2);
+
+        &-box {
+            padding-top: 195px;
+            padding-bottom: 54px;
+        }
+        &-underline {
+            position: relative;
+            display: inline-block;
+            z-index: 1;
+            & svg {
+                position: absolute;
+                bottom: -16px;
+                left: 25px;
+
+                & path {
+                    animation: section_stroke 4s linear forwards infinite;
+                    -webkit-animation: section_stroke 4s linear forwards infinite;
+                    stroke-dasharray: 560;
+                    stroke-dashoffset: 560;
+                }
+            }
+        }
+    }
+    &-btn-box {
+        display: flex;
+        gap: 20px;
+    }
+    &-main-img {
+       margin-top: 22px;
+        margin-left: -11px;
+    }
+    &-shape1 {
+        position: absolute;
+        top: 292px;
+        left: 107px;
+        z-index: -1;
+        animation: moving 6s linear infinite;
+    }
+    &-shape2 {
+        position: absolute;
+        top: 210px;
+        right: -84px;
+        z-index: -1;
+        animation: moving 8s linear infinite;
+    }
+    &-bg{
+        &-shape3 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            animation: moving 4s linear infinite;
+        }
+        &-shape4 {
+            position: absolute;
+            bottom: 70px;
+            left: 80px;
+            animation: moving 6s linear infinite;
+        }
+        &-shape5 {
+            position: absolute;
+            top: 78px;
+            right: 41%;
+            animation: moving 4s linear infinite;
+        }
+        &-shape6 {
+            position: absolute;
+            top: 133px;
+            right: 79px;
+            animation: moving 5s linear infinite;
+        }
+    }
+}
