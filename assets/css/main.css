@@ -18853,4 +18853,90 @@ label {
   animation: moving 5s linear infinite;
 }
 
+.tp-feature-4-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.tp-feature-4-card-wrapper {
+  box-shadow: 0px 0px 60px 0px rgba(34, 30, 58, 0.06);
+  padding: 36px 32px 30px 40px;
+  position: relative;
+  transition: 0.4s;
+}
+.tp-feature-4-card-wrapper::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  height: 2px;
+  width: 30px;
+  background: var(--tp-heading-1);
+  transform: translateX(-50%);
+}
+.tp-feature-4-card-wrapper.blue::before {
+  background-color: var(--tp-text-14);
+}
+.tp-feature-4-card-wrapper.orange::before {
+  background-color: var(--tp-heading-3);
+}
+.tp-feature-4-card-wrapper:hover {
+  background: var(--tp-heading-1);
+}
+.tp-feature-4-card-wrapper:hover.blue {
+  background-color: var(--tp-text-14);
+}
+.tp-feature-4-card-wrapper:hover.orange {
+  background-color: var(--tp-heading-3);
+}
+.tp-feature-4-card-wrapper:hover .tp-feature-4-icon {
+  color: var(--tp-common-white);
+}
+.tp-feature-4-card-wrapper:hover .tp-feature-4-shape {
+  visibility: visible;
+  opacity: 1;
+  transform: translatex(0px);
+}
+.tp-feature-4-card-wrapper:hover .tp-feature-4-title {
+  color: var(--tp-common-white);
+}
+.tp-feature-4-card-wrapper:hover .tp-feature-4-paragraph {
+  color: var(--tp-common-white);
+}
+.tp-feature-4-title {
+  font-size: 20px;
+  color: var(--tp-heading-2);
+  margin-bottom: 20px;
+  transition: 0.4s;
+}
+.tp-feature-4-icon {
+  font-size: 42px;
+  color: var(--tp-heading-1);
+  transition: 0.4s;
+  margin-top: -23px;
+  position: relative;
+  z-index: 1;
+}
+.tp-feature-4-icon.blue {
+  color: var(--tp-text-14);
+}
+.tp-feature-4-icon.orange {
+  color: var(--tp-heading-3);
+}
+.tp-feature-4-paragraph {
+  width: 90%;
+  color: var(--tp-text-10);
+  line-height: 26px;
+  transition: 0.4s;
+}
+.tp-feature-4-shape {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translatex(126px);
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s;
+}
+
 /*# sourceMappingURL=main.css.map */
