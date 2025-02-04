@@ -137,6 +137,9 @@
         }
         &:hover {
             color: var(--tp-common-white);
+            &.color{
+                color: inherit;
+            }
             &::before {
                 top: 100%;
             }
