@@ -716,8 +716,8 @@
 	})
 	
 	
-	if ($(".brand__slider-active-5").length > 0) {
-		$('.brand__slider-active-5').slick({
+	if ($(".tp-brand-slider-active-1").length > 0) {
+		$('.tp-brand-slider-active-1').slick({
 			speed: 5000,
 			autoplay: true,
 			autoplaySpeed: 0,
@@ -729,17 +729,17 @@
 			initialSlide: 1,
 			arrows: false,
 			buttons: false,
-			pauseOnFocus: false,
+			pauseOnFocus: true,
 			pauseOnHover: true,
 		  });
 	}
 
 	// Home 4 brand 
-	if ($(".brand__slider-active-5-1").length > 0) {
+	if ($(".tp-brand-slider-active-2").length > 0) {
 		var autoplaySpeed = 0;
 		var autoplayOn    = true;
 	
-		var $slickRoot = $('.brand__slider-active-5-1');
+		var $slickRoot = $('.tp-brand-slider-active-2');
 	
 		$slickRoot.on('init', function() {
 			var $slickList = $slickRoot.find('.slick-list');

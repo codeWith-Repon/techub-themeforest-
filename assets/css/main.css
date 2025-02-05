@@ -19271,4 +19271,25 @@ label {
   margin-top: 53px;
 }
 
+.tp-brand-4-slider-item {
+  margin-top: 34px;
+}
+.tp-brand-4-slider-item ul li {
+  list-style: none;
+}
+.tp-brand-4-slider-item ul li span {
+  font-size: 60px;
+  letter-spacing: -2px;
+  color: var(--tp-heading-2);
+  font-weight: 700;
+  font-family: var(--tp-ff-heading);
+  display: inline-block;
+}
+.tp-brand-4-slider-item ul li img {
+  display: inline-block;
+  margin: 0 58px;
+  margin-top: 0px;
+  margin-top: -26px;
+}
+
 /*# sourceMappingURL=main.css.map */
